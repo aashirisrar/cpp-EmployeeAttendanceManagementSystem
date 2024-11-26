@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Report on software metrics-->
+<CCCC_Project>
+<timestamp>Wed Nov 27 03:38:32 2024
+</timestamp>
+<project_summary>
+<number_of_modules value="17" level="0" />
+<lines_of_code value="296" level="0" />
+<lines_of_code_per_module value="17.412" level="0" />
+<McCabes_cyclomatic_complexity value="35" level="0" />
+<McCabes_cyclomatic_complexity_per_module value="2.059" level="0" />
+<lines_of_comment value="5" level="0" />
+<lines_of_comment_per_module value="0.294" level="0" />
+<lines_of_code_per_line_of_comment value="59.200" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="7.000" level="1" />
+<IF4 value="82" level="0" />
+<IF4_per_module value="4.824" level="0" />
+<IF4_visible value="36" level="0" />
+<IF4_visible_per_module value="2.118" level="0" />
+<IF4_concrete value="1" level="0" />
+<IF4_concrete value="0.059" level="0" />
+<rejected_lines_of_code value="4" level="0" />
+</project_summary>
+<procedural_summary>
+<module>
+<name>AttendanceSystem</name>
+<lines_of_code value="96" level="0" />
+<McCabes_cyclomatic_complexity value="14" level="0" />
+<lines_of_comment value="4" level="0" />
+<lines_of_code_per_line_of_comment value="24.000" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="3.500" level="0" />
+</module>
+<module>
+<name>Employee</name>
+<lines_of_code value="13" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>EmployeeInterface</name>
+<lines_of_code value="36" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>GuardInterface</name>
+<lines_of_code value="29" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>ILeave</name>
+<lines_of_code value="11" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>ILeaveApprovalStrategy</name>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>ILeaveFactory</name>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>IObserver</name>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>IReportGenerator</name>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>ISubject</name>
+<lines_of_code value="7" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>Leave</name>
+<lines_of_code value="11" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>LeaveManagement</name>
+<lines_of_code value="11" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>SupervisorInterface</name>
+<lines_of_code value="26" level="0" />
+<McCabes_cyclomatic_complexity value="5" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="0" />
+</module>
+<module>
+<name>anonymous</name>
+<lines_of_code value="32" level="0" />
+<McCabes_cyclomatic_complexity value="7" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="32.000" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="7.000" level="1" />
+</module>
+<module>
+<name>bool</name>
+<lines_of_code value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>string</name>
+<lines_of_code value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+<module>
+<name>unique_ptr</name>
+<lines_of_code value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module>
+</procedural_summary>
+<oo_design>
+<module>
+<name>AttendanceSystem</name>
+<weighted_methods_per_class_unity value="8" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="6" level="0" />
+</module>
+<module>
+<name>Employee</name>
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="1" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="2" level="0" />
+</module>
+<module>
+<name>EmployeeInterface</name>
+<weighted_methods_per_class_unity value="2" level="0" />
+<weighted_methods_per_class_visibility value="2" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="1" level="0" />
+</module>
+<module>
+<name>GuardInterface</name>
+<weighted_methods_per_class_unity value="2" level="0" />
+<weighted_methods_per_class_visibility value="2" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="1" level="0" />
+</module>
+<module>
+<name>ILeave</name>
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="1" level="0" />
+<coupling_between_objects value="1" level="0" />
+</module>
+<module>
+<name>ILeaveApprovalStrategy</name>
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="0" level="0" />
+</module>
+<module>
+<name>ILeaveFactory</name>
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="0" level="0" />
+</module>
+<module>
+<name>IObserver</name>
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="1" level="0" />
+<coupling_between_objects value="1" level="0" />
+</module>
+<module>
+<name>IReportGenerator</name>
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="0" level="0" />
+</module>
+<module>
+<name>ISubject</name>
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="1" level="0" />
+<coupling_between_objects value="1" level="0" />
+</module>
+<module>
+<name>Leave</name>
+<weighted_methods_per_class_unity value="1" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="1" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="3" level="0" />
+</module>
+<module>
+<name>LeaveManagement</name>
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="1" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="2" level="0" />
+</module>
+<module>
+<name>SupervisorInterface</name>
+<weighted_methods_per_class_unity value="2" level="0" />
+<weighted_methods_per_class_visibility value="2" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="1" level="0" />
+</module>
+<module>
+<name>anonymous</name>
+<weighted_methods_per_class_unity value="1" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="0" level="0" />
+</module>
+<module>
+<name>bool</name>
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="1" level="0" />
+</module>
+<module>
+<name>string</name>
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="3" level="0" />
+</module>
+<module>
+<name>unique_ptr</name>
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="1" level="0" />
+</module>
+</oo_design>
+<structural_summary>
+<module>
+<name>AttendanceSystem</name>
+<fan_out_visible value="3" level="0" />
+<fan_out_concrete value="0" level="0" />
+<fan_out value="3" level="0" />
+<fan_in_visible value="2" level="0" />
+<fan_in_concrete value="3" level="0" />
+<fan_in value="3" level="0" />
+<IF4_visible value="36" level="1" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="81" level="0" />
+</module>
+<module>
+<name>Employee</name>
+<fan_out_visible value="0" level="0" />
+<fan_out_concrete value="0" level="0" />
+<fan_out value="0" level="0" />
+<fan_in_visible value="2" level="0" />
+<fan_in_concrete value="2" level="0" />
+<fan_in value="2" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>EmployeeInterface</name>
+<fan_out_visible value="0" level="0" />
+<fan_out_concrete value="0" level="0" />
+<fan_out value="0" level="0" />
+<fan_in_visible value="1" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="1" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>GuardInterface</name>
+<fan_out_visible value="0" level="0" />
+<fan_out_concrete value="0" level="0" />
+<fan_out value="0" level="0" />
+<fan_in_visible value="1" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="1" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>ILeave</name>
+<fan_out_visible value="1" level="0" />
+<fan_out_concrete value="1" level="0" />
+<fan_out value="1" level="0" />
+<fan_in_visible value="0" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="0" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>ILeaveApprovalStrategy</name>
+<fan_out_visible value="0" level="0" />
+<fan_out_concrete value="0" level="0" />
+<fan_out value="0" level="0" />
+<fan_in_visible value="0" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="0" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>ILeaveFactory</name>
+<fan_out_visible value="0" level="0" />
+<fan_out_concrete value="0" level="0" />
+<fan_out value="0" level="0" />
+<fan_in_visible value="0" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="0" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>IObserver</name>
+<fan_out_visible value="1" level="0" />
+<fan_out_concrete value="1" level="0" />
+<fan_out value="1" level="0" />
+<fan_in_visible value="0" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="0" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>IReportGenerator</name>
+<fan_out_visible value="0" level="0" />
+<fan_out_concrete value="0" level="0" />
+<fan_out value="0" level="0" />
+<fan_in_visible value="0" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="0" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>ISubject</name>
+<fan_out_visible value="1" level="0" />
+<fan_out_concrete value="1" level="0" />
+<fan_out value="1" level="0" />
+<fan_in_visible value="0" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="0" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>Leave</name>
+<fan_out_visible value="0" level="0" />
+<fan_out_concrete value="0" level="0" />
+<fan_out value="0" level="0" />
+<fan_in_visible value="3" level="0" />
+<fan_in_concrete value="3" level="0" />
+<fan_in value="3" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>LeaveManagement</name>
+<fan_out_visible value="0" level="0" />
+<fan_out_concrete value="1" level="0" />
+<fan_out value="1" level="0" />
+<fan_in_visible value="1" level="0" />
+<fan_in_concrete value="1" level="0" />
+<fan_in value="1" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="1" level="0" />
+<IF4 value="1" level="0" />
+</module>
+<module>
+<name>SupervisorInterface</name>
+<fan_out_visible value="0" level="0" />
+<fan_out_concrete value="0" level="0" />
+<fan_out value="0" level="0" />
+<fan_in_visible value="1" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="1" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>anonymous</name>
+<fan_out_visible value="0" level="0" />
+<fan_out_concrete value="0" level="0" />
+<fan_out value="0" level="0" />
+<fan_in_visible value="0" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="0" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>bool</name>
+<fan_out_visible value="1" level="0" />
+<fan_out_concrete value="1" level="0" />
+<fan_out value="1" level="0" />
+<fan_in_visible value="0" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="0" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>string</name>
+<fan_out_visible value="3" level="0" />
+<fan_out_concrete value="3" level="0" />
+<fan_out value="3" level="0" />
+<fan_in_visible value="0" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="0" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+<module>
+<name>unique_ptr</name>
+<fan_out_visible value="1" level="0" />
+<fan_out_concrete value="1" level="0" />
+<fan_out value="1" level="0" />
+<fan_in_visible value="0" level="0" />
+<fan_in_concrete value="0" level="0" />
+<fan_in value="0" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4 value="0" level="0" />
+</module>
+</structural_summary>
+<other_extents>
+<rejected_extent>
+<name>&lt;file scope items&gt;</name>
+<source_reference file="main.cpp" line="1" />
+<lines_of_code value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+</rejected_extent>
+<rejected_extent>
+<name>&lt;file scope items&gt;</name>
+<source_reference file="attendance_system.h" line="1" />
+<lines_of_code value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+</rejected_extent>
+<rejected_extent>
+<name>&lt;file scope items&gt;</name>
+<source_reference file="interfaces.h" line="1" />
+<lines_of_code value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+</rejected_extent>
+<rejected_extent>
+<name>employees [ id </name>
+<source_reference file="leave_management.h" line="20" />
+<lines_of_code value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+</rejected_extent>
+<rejected_extent>
+<name>&lt;file scope items&gt;</name>
+<source_reference file="user_interfaces.h" line="1" />
+<lines_of_code value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+</rejected_extent>
+</other_extents>
+</CCCC_Project>

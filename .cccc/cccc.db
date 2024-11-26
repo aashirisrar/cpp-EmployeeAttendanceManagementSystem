@@ -1,0 +1,117 @@
+CCCC_Module@AttendanceSystem@class@
+CCCC_ModExt@AttendanceSystem@class@attendance_system.h@8@definition@F???2@LOC:8 COM:0 MVG:0@2@d@
+CCCC_Module@Employee@class@
+CCCC_ModExt@Employee@class@employee.h@8@definition@????0@LOC:13 COM:0 MVG:0@0@d@
+CCCC_Module@EmployeeInterface@class@
+CCCC_ModExt@EmployeeInterface@class@user_interfaces.h@68@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_Module@GuardInterface@class@
+CCCC_ModExt@GuardInterface@class@user_interfaces.h@5@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_Module@ILeave@class@
+CCCC_ModExt@ILeave@class@interfaces.h@8@definition@F???2@LOC:11 COM:0 MVG:0@2@d@
+CCCC_Module@ILeaveApprovalStrategy@class@
+CCCC_ModExt@ILeaveApprovalStrategy@class@interfaces.h@26@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_Module@ILeaveFactory@class@
+CCCC_ModExt@ILeaveFactory@class@interfaces.h@20@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_Module@IObserver@class@
+CCCC_ModExt@IObserver@class@interfaces.h@32@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_Module@IReportGenerator@class@
+CCCC_ModExt@IReportGenerator@class@interfaces.h@46@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_Module@ISubject@class@
+CCCC_ModExt@ISubject@class@interfaces.h@38@definition@F???2@LOC:7 COM:0 MVG:0@2@d@
+CCCC_Module@Leave@class@
+CCCC_ModExt@Leave@class@leave.h@7@definition@F???0@LOC:9 COM:0 MVG:1@0@d@
+CCCC_Module@LeaveManagement@class@
+CCCC_ModExt@LeaveManagement@class@leave_management.h@7@definition@????0@LOC:11 COM:0 MVG:0@0@d@
+CCCC_Module@SupervisorInterface@class@
+CCCC_ModExt@SupervisorInterface@class@user_interfaces.h@38@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_Module@anonymous@@
+CCCC_Module@bool@@
+CCCC_Module@char@builtin@
+CCCC_ModExt@char@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@double@builtin@
+CCCC_ModExt@double@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@float@builtin@
+CCCC_ModExt@float@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@int@builtin@
+CCCC_ModExt@int@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@long@builtin@
+CCCC_ModExt@long@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Module@string@@
+CCCC_Module@unique_ptr@@
+CCCC_Module@void@builtin@
+CCCC_ModExt@void@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Member@AttendanceSystem@AttendanceSystem@@(const string &,const string &)@
+CCCC_MemExt@AttendanceSystem@AttendanceSystem@@(const string &,const string &)@attendance_system.h@16@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@AttendanceSystem@applyLeave@@(int,const string &,int,const string &,const string &)@
+CCCC_MemExt@AttendanceSystem@applyLeave@@(int,const string &,int,const string &,const string &)@attendance_system.h@57@definition@F????@LOC:6 COM:0 MVG:0@?@d@
+CCCC_Member@AttendanceSystem@generateAttendanceReport@@()@
+CCCC_MemExt@AttendanceSystem@generateAttendanceReport@@()@attendance_system.h@64@definition@F????@LOC:7 COM:0 MVG:1@?@d@
+CCCC_Member@AttendanceSystem@generateLeaveReport@@()@
+CCCC_MemExt@AttendanceSystem@generateLeaveReport@@()@attendance_system.h@72@definition@F????@LOC:9 COM:0 MVG:2@?@d@
+CCCC_Member@AttendanceSystem@loadEmployeesFromFile@@()@
+CCCC_MemExt@AttendanceSystem@loadEmployeesFromFile@@()@attendance_system.h@25@definition@F????@LOC:21 COM:0 MVG:4@?@d@
+CCCC_Member@AttendanceSystem@markAttendance@@(int,int)@
+CCCC_MemExt@AttendanceSystem@markAttendance@@(int,int)@attendance_system.h@49@definition@F????@LOC:7 COM:0 MVG:1@?@d@
+CCCC_Member@AttendanceSystem@saveEmployeeDataToFile@@(const string &)@
+CCCC_MemExt@AttendanceSystem@saveEmployeeDataToFile@@(const string &)@attendance_system.h@83@definition@F????@LOC:31 COM:4 MVG:6@?@d@
+CCCC_Member@AttendanceSystem@~AttendanceSystem@@()@
+CCCC_MemExt@AttendanceSystem@~AttendanceSystem@@()@attendance_system.h@21@definition@F????@LOC:3 COM:0 MVG:0@?@d@
+CCCC_Member@EmployeeInterface@EmployeeInterface@@(AttendanceSystem &)@
+CCCC_MemExt@EmployeeInterface@EmployeeInterface@@(AttendanceSystem &)@user_interfaces.h@73@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
+CCCC_Member@EmployeeInterface@run@@()@
+CCCC_MemExt@EmployeeInterface@run@@()@user_interfaces.h@75@definition@F???0@LOC:30 COM:0 MVG:4@0@d@
+CCCC_Member@GuardInterface@GuardInterface@@(AttendanceSystem &)@
+CCCC_MemExt@GuardInterface@GuardInterface@@(AttendanceSystem &)@user_interfaces.h@10@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
+CCCC_Member@GuardInterface@run@@()@
+CCCC_MemExt@GuardInterface@run@@()@user_interfaces.h@12@definition@F???0@LOC:23 COM:0 MVG:4@0@d@
+CCCC_Member@Leave@Leave@@(const string &,int,bool)@
+CCCC_MemExt@Leave@Leave@@(const string &,int,bool)@leave.h@16@definition@F????@LOC:2 COM:0 MVG:0@?@d@
+CCCC_Member@SupervisorInterface@SupervisorInterface@@(AttendanceSystem &)@
+CCCC_MemExt@SupervisorInterface@SupervisorInterface@@(AttendanceSystem &)@user_interfaces.h@43@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
+CCCC_Member@SupervisorInterface@run@@()@
+CCCC_MemExt@SupervisorInterface@run@@()@user_interfaces.h@45@definition@F???0@LOC:20 COM:0 MVG:5@0@d@
+CCCC_Member@anonymous@main@@()@
+CCCC_MemExt@anonymous@main@@()@main.cpp@4@definition@F????@LOC:32 COM:1 MVG:7@?@d@
+CCCC_UseRel@LeaveManagement@AttendanceSystem@
+CCCC_UseExt@LeaveManagement@AttendanceSystem@attendance_system.h@10@has by value@????2@LOC:0 COM:0 MVG:0@2@H@
+CCCC_UseRel@string@AttendanceSystem@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@12@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@13@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@16@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@16@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@57@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@57@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@57@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@83@pass by reference@F????@*@?@p@
+CCCC_UseRel@unique_ptr@AttendanceSystem@
+CCCC_UseExt@unique_ptr@AttendanceSystem@attendance_system.h@11@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseRel@IObserver@Employee@
+CCCC_UseExt@IObserver@Employee@employee.h@8@inheritance@????0@*@0@I@
+CCCC_UseRel@string@Employee@
+CCCC_UseExt@string@Employee@employee.h@11@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseRel@AttendanceSystem@EmployeeInterface@
+CCCC_UseExt@AttendanceSystem@EmployeeInterface@user_interfaces.h@70@has by reference@F???2@LOC:0 COM:0 MVG:0@2@h@
+CCCC_UseExt@AttendanceSystem@EmployeeInterface@user_interfaces.h@73@pass by reference@F???0@*@0@p@
+CCCC_UseRel@AttendanceSystem@GuardInterface@
+CCCC_UseExt@AttendanceSystem@GuardInterface@user_interfaces.h@7@has by reference@????2@LOC:0 COM:0 MVG:0@2@h@
+CCCC_UseExt@AttendanceSystem@GuardInterface@user_interfaces.h@10@pass by reference@F???0@*@0@p@
+CCCC_UseRel@ILeave@Leave@
+CCCC_UseExt@ILeave@Leave@leave.h@7@inheritance@????0@*@0@I@
+CCCC_UseRel@bool@Leave@
+CCCC_UseExt@bool@Leave@leave.h@11@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseExt@bool@Leave@leave.h@16@pass by value@F????@*@?@P@
+CCCC_UseRel@string@Leave@
+CCCC_UseExt@string@Leave@leave.h@9@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseExt@string@Leave@leave.h@12@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseExt@string@Leave@leave.h@13@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseExt@string@Leave@leave.h@16@pass by reference@F????@*@?@p@
+CCCC_UseRel@ISubject@LeaveManagement@
+CCCC_UseExt@ISubject@LeaveManagement@leave_management.h@7@inheritance@????0@*@0@I@
+CCCC_UseRel@AttendanceSystem@SupervisorInterface@
+CCCC_UseExt@AttendanceSystem@SupervisorInterface@user_interfaces.h@40@has by reference@F???2@LOC:0 COM:0 MVG:0@2@h@
+CCCC_UseExt@AttendanceSystem@SupervisorInterface@user_interfaces.h@43@pass by reference@F???0@*@0@p@
+CCCC_RejExt@main.cpp@1@<file scope items>@F????@LOC:0 COM:0 MVG:0@?@r@
+CCCC_RejExt@attendance_system.h@1@<file scope items>@F???2@LOC:1 COM:0 MVG:0@2@r@
+CCCC_RejExt@interfaces.h@1@<file scope items>@F???2@LOC:1 COM:0 MVG:0@2@r@
+CCCC_RejExt@leave_management.h@20@employees [ id @????0@LOC:1 COM:0 MVG:0@0@r@
+CCCC_RejExt@user_interfaces.h@1@<file scope items>@F???2@LOC:1 COM:0 MVG:0@2@r@
