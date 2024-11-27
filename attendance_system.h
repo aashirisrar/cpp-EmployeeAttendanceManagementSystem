@@ -104,6 +104,23 @@ public:
         }
     }
 
+    void generateLeaveReportForEmployee(int employeeId)
+    {
+        std::cout << "Leave Report:" << std::endl;
+        auto &employees = leaveManagement.getEmployees();
+        auto it = employees.find(employeeId);
+
+        if (it != employees.end())
+        {
+            std::cout << "Employee " << it->second->getName() << " (ID: " << it->second->getId() << "):" << std::endl;
+            for (const auto &leave : it->second->getLeaves())
+            {
+                std::cout << "  " << leave->getType() << " leave for " << leave->getDuration() << " days" << std::endl
+                          << "  Leave Balance: " << "Casual " << it->second->getCasualLeaveBalance() << ", Earned " << it->second->getEarnedLeaveBalance() << std::endl;
+            }
+        }
+    }
+
     // New function to save employee data to file
     void saveEmployeeDataToFile(const std::string& filename) {
         std::ofstream file(filename);
