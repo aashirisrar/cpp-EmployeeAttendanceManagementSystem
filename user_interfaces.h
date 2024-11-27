@@ -75,8 +75,10 @@ private:
 public:
     EmployeeInterface(AttendanceSystem& sys) : system(sys) {}
 
-    void run() {
-        while (true) {
+    void run()
+    {
+        while (true)
+        {
             std::cout << "\nEmployee Menu:\n"
                       << "1. Apply for Leave\n"
                       << "2. Exit\n"
@@ -84,7 +86,8 @@ public:
             int choice;
             std::cin >> choice;
 
-            if (choice == 1) {
+            if (choice == 1)
+            {
                 int employeeId, duration;
                 std::string leaveType, startDate, endDate;
                 std::cout << "Enter Employee ID: ";
@@ -97,11 +100,25 @@ public:
                 std::cin >> startDate;
                 std::cout << "Enter End Date (YYYY-MM-DD): ";
                 std::cin >> endDate;
+                if (leaveType == "Casual" && duration > 4)
+                {
+                    std::cout << "Cannot avail more than 4 casual leaves at a time";
+                    break;
+                }
+                else if (leaveType == "Earned" && duration < 4)
+                {
+                    std::cout << "Cannot avail less than 4 earned leaves at a time";
+                    break;
+                }
                 system.applyLeave(employeeId, leaveType, duration, startDate, endDate);
                 std::cout << "Leave application submitted successfully.\n";
-            } else if (choice == 2) {
+            }
+            else if (choice == 2)
+            {
                 break;
-            } else {
+            }
+            else
+            {
                 std::cout << "Invalid choice. Please try again.\n";
             }
         }
