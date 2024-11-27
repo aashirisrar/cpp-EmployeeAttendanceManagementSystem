@@ -135,7 +135,7 @@ public:
         }
 
         int employeeId;
-        std::cout << "Enter employee ID: ";
+        std::cout << "Enter employee ID to proceed: ";
         std::cin >> employeeId;
 
         auto &employees = leaveManagement.getEmployees();
@@ -224,13 +224,13 @@ public:
             int employeeId, duration;
             bool approved;
             iss >> employeeId >> type >> startDate >> endDate >> approved >> duration >> status;
-            Leave leave(type, duration, approved, status);
 
             for(const auto& [id, employeePtr] : leaveManagement.getEmployees())
             {
                 auto leave = leaveFactory->createLeave(type, duration);
                 leave->setStartDate(startDate);
                 leave->setEndDate(endDate);
+                leave->setStatus(status);
                 leaveManagement.applyLeave(employeeId, std::move(leave));
             }
         }
