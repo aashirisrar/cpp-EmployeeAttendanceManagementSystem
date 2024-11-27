@@ -104,6 +104,19 @@ public:
         }
     }
 
+    void generateOutStandingLeaveReport()
+    {
+        std::cout << "Leave Report:" << std::endl;
+        for (const auto &[id, employee] : leaveManagement.getEmployees())
+        {
+            std::cout << "Employee " << employee->getName() << " (ID: " << id << "):" << std::endl;
+            for (const auto &leave : employee->getLeaves())
+            {
+                std::cout << "  Leave Balance: " << "Casual " << employee->getCasualLeaveBalance() << ", Earned " << employee->getEarnedLeaveBalance() << std::endl;
+            }
+        }
+    }
+
     void generateLeaveReportForEmployee(int employeeId)
     {
         std::cout << "Leave Report:" << std::endl;
