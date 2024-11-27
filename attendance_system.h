@@ -246,7 +246,6 @@ public:
         std::ofstream file(leaveDetailsFile);
         for (const auto& [id, employeePtr]  : leaveManagement.getEmployees())
         {   
-
             for(const auto& leave: employeePtr->getLeaves())
             {
                 file << employeePtr->getId() << " " << " "
@@ -254,5 +253,29 @@ public:
                         << leave->getEndDate() << " " <<leave->requiresApproval() <<" "<< leave->getDuration() << " " << leave->getStatus() << std::endl;
             }            
         }
+    }
+
+    bool checkLeaveBalance(int employeeId, const std::string &type, int duration)
+    {
+        int casualLeaves=0, earnedLeaves=0;
+        auto &employees = leaveManagement.getEmployees();
+        auto it = employees.find(employeeId);
+        if (it != employees.end())
+        {
+            if (type == "Casual")
+            {
+                casualLeaves = it->second->getCasualLeaveBalance();
+                
+                if(casualLeaves - duration > 0) return 1;
+            }
+            else if (type == "Earned")
+            {
+                earnedLeaves = it->second->getEarnedLeaveBalance();
+
+                if(earnedLeaves - duration > 0) return 1;
+            }
+        }
+
+        return 0;
     }
 };

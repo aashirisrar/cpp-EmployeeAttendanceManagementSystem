@@ -102,16 +102,23 @@ public:
                 std::cin >> endDate;
                 if (leaveType == "Casual" && duration > 4)
                 {
-                    std::cout << "Cannot avail more than 4 casual leaves at a time";
+                    std::cout << "Cannot avail more than 4 casual leaves at a time.\n";
                     break;
                 }
                 else if (leaveType == "Earned" && duration < 4)
                 {
-                    std::cout << "Cannot avail less than 4 earned leaves at a time";
+                    std::cout << "Cannot avail less than 4 earned leaves at a time.\n";
                     break;
                 }
-                system.applyLeave(employeeId, leaveType, duration, startDate, endDate);
-                std::cout << "Leave application submitted successfully.\n";
+                // check if user has enough leave balance
+                bool res = system.checkLeaveBalance(employeeId, leaveType, duration);
+                if(res)
+                {
+                    system.applyLeave(employeeId, leaveType, duration, startDate, endDate);
+                    std::cout << "Leave application submitted successfully.\n";
+                } else {
+                    std::cout << "Error, Leaves duration out of balance or employee id not correct.\n";
+                }
             }
             else if (choice == 2)
             {
