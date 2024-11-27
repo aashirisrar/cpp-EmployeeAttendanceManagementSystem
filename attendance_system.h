@@ -128,7 +128,7 @@ public:
                 if (leave->requiresApproval())
                 {
                     std::cout << "Type: " << leave->getType()
-                              << ", From: " << leave->getStartDate() << ", To: " << leave->getEndDate() << "Duration: " << leave->getDuration() << std::endl
+                              << ", From: " << leave->getStartDate() << ", To: " << leave->getEndDate() << " Duration: " << leave->getDuration() <<" days" << std::endl
                               << std::endl;
                 }
             }
@@ -148,7 +148,7 @@ public:
                 if (leave->requiresApproval())
                 {
                     int c;
-                    std::cout << "Enter 1 to approve and 0 to reject:";
+                    std::cout << "Enter 1 to approve and 0 to reject: ";
                     std::cin >> c;
                     if (c == 1)
                     {

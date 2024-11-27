@@ -47,7 +47,8 @@ public:
             std::cout << "\nSupervisor Menu:\n"
                       << "1. Generate Low Attendance Report\n"
                       << "2. Generate Leave Report\n"
-                      << "3. Exit\n"
+                      << "3. Approve Leaves\n"
+                      << "4. Exit\n"
                       << "Enter your choice: ";
             int choice;
             std::cin >> choice;
@@ -57,6 +58,8 @@ public:
             } else if (choice == 2) {
                 system.generateLeaveReport();
             } else if (choice == 3) {
+                system.approveLeave();
+            } else if (choice == 4) {
                 break;
             } else {
                 std::cout << "Invalid choice. Please try again.\n";
