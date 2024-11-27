@@ -87,32 +87,15 @@ public:
             return;
         }
 
-        // Write header
-        file << std::left << std::setw(10) << "ID" 
-             << std::setw(20) << "Name" 
-             << std::setw(15) << "Working Hours" 
-             << "Leave Details" << std::endl;
-        file << std::string(80, '-') << std::endl;
-
         // Write employee data
         for (const auto& [id, employee] : leaveManagement.getEmployees()) {
-            file << std::left << std::setw(10) << id
-                 << std::setw(20) << employee->getName()
-                 << std::setw(15) << employee->getWorkingHours();
+            file << id <<" "
+                 << employee->getName()<<" "
+                 << employee->getWorkingHours()<<" "
+                 << employee->getCasualLeaveBalance()<<" "
+                 << employee->getEarnedLeaveBalance();
+                 
 
-            // Write leave details
-            if (employee->getLeaves().empty()) {
-                file << "No leaves taken";
-            } else {
-                bool first = true;
-                for (const auto& leave : employee->getLeaves()) {
-                    if (!first) {
-                        file << "; ";
-                    }
-                    file << leave->getType() << " (" << leave->getDuration() << " hours)";
-                    first = false;
-                }
-            }
             file << std::endl;
         }
 
