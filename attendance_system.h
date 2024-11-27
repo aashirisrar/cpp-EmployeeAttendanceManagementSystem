@@ -122,13 +122,13 @@ public:
         std::cout << "Pending leaves:" << std::endl;
         for (const auto &[id, employee] : leaveManagement.getEmployees())
         {
-            std::cout << "Employee " << employee->getName() << " (ID: " << id << "):" << std::endl;
             for (const auto &leave : employee->getLeaves())
             {
-                if (leave->requiresApproval())
+                if (leave->requiresApproval() && leave->getStatus() == "Pending")
                 {
+                    std::cout << "Employee " << employee->getName() << " (ID: " << id << "):" << std::endl;
                     std::cout << "Type: " << leave->getType()
-                              << ", From: " << leave->getStartDate() << ", To: " << leave->getEndDate() << " Duration: " << leave->getDuration() <<" days" << std::endl
+                              << ", From: " << leave->getStartDate() << ", To: " << leave->getEndDate() << " Duration: " << leave->getDuration() << " days" << std::endl
                               << std::endl;
                 }
             }
