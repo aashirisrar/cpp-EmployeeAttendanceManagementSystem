@@ -76,12 +76,30 @@ public:
         }
     }
 
-    void generateLeaveReport() {
+    void generateAttendanceReportForEmployee(int employeeId)
+    {
+        auto& employees = leaveManagement.getEmployees();
+        auto it = employees.find(employeeId);
+
+        if (it != employees.end())
+        {
+            float attendancePercentage = (it->second->getWorkingHours() / (40.0f * 4)) * 100;
+            std::cout << "Attendance Report:" << std::endl;
+            std::cout << "Employee " << it->second->getName() << " (ID: " << it->second->getId() << "): "
+                      << it->second->getWorkingHours() << " hours" << ", Attendance %: " << attendancePercentage << std::endl;
+        }
+    }
+
+    void generateLeaveReport()
+    {
         std::cout << "Leave Report:" << std::endl;
-        for (const auto& [id, employee] : leaveManagement.getEmployees()) {
+        for (const auto &[id, employee] : leaveManagement.getEmployees())
+        {
             std::cout << "Employee " << employee->getName() << " (ID: " << id << "):" << std::endl;
-            for (const auto& leave : employee->getLeaves()) {
-                std::cout << "  " << leave->getType() << " leave for " << leave->getDuration() << " hours" << std::endl;
+            for (const auto &leave : employee->getLeaves())
+            {
+                std::cout << "  " << leave->getType() << " leave for " << leave->getDuration() << " days" << std::endl
+                          << "  Leave Balance: " << "Casual " << employee->getCasualLeaveBalance() << ", Earned " << employee->getEarnedLeaveBalance() << std::endl;
             }
         }
     }
