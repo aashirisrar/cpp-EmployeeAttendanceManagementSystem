@@ -119,6 +119,7 @@ public:
 
     void approveLeave()
     {
+        bool show = 0;
         std::cout << "Pending leaves:" << std::endl;
         for (const auto &[id, employee] : leaveManagement.getEmployees())
         {
@@ -126,6 +127,7 @@ public:
             {
                 if (leave->requiresApproval() && leave->getStatus() == "Pending")
                 {
+                    show = 1;
                     std::cout << "Employee " << employee->getName() << " (ID: " << id << "):" << std::endl;
                     std::cout << "Type: " << leave->getType()
                               << ", From: " << leave->getStartDate() << ", To: " << leave->getEndDate() << " Duration: " << leave->getDuration() << " days" << std::endl
@@ -134,42 +136,45 @@ public:
             }
         }
 
-        int employeeId;
-        std::cout << "Enter employee ID to proceed: ";
-        std::cin >> employeeId;
-
-        auto &employees = leaveManagement.getEmployees();
-        auto it = employees.find(employeeId);
-
-        if (it != employees.end())
+        if (show)
         {
-            for (const auto &leave : it->second->getLeaves())
+            int employeeId;
+            std::cout << "Enter employee ID to proceed to approval: ";
+            std::cin >> employeeId;
+
+            auto &employees = leaveManagement.getEmployees();
+            auto it = employees.find(employeeId);
+
+            if (it != employees.end())
             {
-                if (leave->requiresApproval())
+                for (const auto &leave : it->second->getLeaves())
                 {
-                    int c;
-                    std::cout << "Enter 1 to approve and 0 to reject: ";
-                    std::cin >> c;
-                    if (c == 1)
+                    if (leave->requiresApproval() && leave->getStatus() == "Pending")
                     {
-                        leave->setStatus("Approved");
-                        std::cout << "Leave approved." << std::endl;
-                    }
-                    else if (c == 0)
-                    {
-                        leave->setStatus("Rejected");
-                        std::cout << "Leave rejected." << std::endl;
-                    }
-                    else
-                    {
-                        std::cout << "Invalid Input!<<" << std::endl;
+                        int c;
+                        std::cout << "Enter 1 to approve and 0 to reject: ";
+                        std::cin >> c;
+                        if (c == 1)
+                        {
+                            leave->setStatus("Approved");
+                            std::cout << "Leave approved." << std::endl;
+                        }
+                        else if (c == 0)
+                        {
+                            leave->setStatus("Rejected");
+                            std::cout << "Leave rejected." << std::endl;
+                        }
+                        else
+                        {
+                            std::cout << "Invalid Input!<<" << std::endl;
+                        }
                     }
                 }
             }
-        }
-        else
-        {
-            std::cout << "Employee not found." << std::endl;
+            else
+            {
+                std::cout << "Employee not found." << std::endl;
+            }
         }
     }
 
