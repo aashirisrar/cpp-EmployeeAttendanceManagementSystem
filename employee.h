@@ -19,6 +19,12 @@ public:
         : id(i), name(n), workingHours(0), casualLeaveBalance(15), earnedLeaveBalance(21) {}
 
     void applyForLeave(std::unique_ptr<ILeave> leave) {
+        if(leave->getType() == "Casual")
+        {
+            casualLeaveBalance = 15 - leave->getDuration();
+        } else if(leave->getType() == "Earned"){
+            earnedLeaveBalance = 21 - leave->getDuration();
+        }
         leaves.push_back(std::move(leave));
     }
 
