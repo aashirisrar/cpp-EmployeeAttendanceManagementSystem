@@ -16,10 +16,12 @@ public:
     AttendanceSystem(const std::string& empFile = "employees.txt", const std::string& leaveFile = "leave_details.txt")
         : leaveFactory(std::make_unique<LeaveFactory>()), employeeDataFile(empFile), leaveDetailsFile(leaveFile) {
         loadEmployeesFromFile();
+        loadLeaves();
     }
 
     ~AttendanceSystem() {
         saveEmployeeDataToFile("employees.txt");
+        saveLeaves();
     }
 
     void loadEmployeesFromFile() {
@@ -101,5 +103,48 @@ public:
 
         std::cout << "Employee data has been saved to " << filename << std::endl;
     }
-};
 
+    void loadLeaves()
+    {
+        std::ifstream file(leaveDetailsFile);
+        std::string line;
+        while (std::getline(file, line))
+        {
+            std::istringstream iss(line);
+            std::string type, startDate, endDate;
+            int employeeId;
+            int duration;
+            bool approved;
+            iss >> employeeId >> type >> startDate >> endDate >> approved>> duration;
+            Leave leave(type, duration, approved);
+
+            // if (approved)
+            // {
+            //     leave.approve();
+            // }
+
+            for(const auto& [id, employeePtr] : leaveManagement.getEmployees())
+            {
+                auto leave = leaveFactory->createLeave(type, duration);
+                leave->setStartDate(startDate);
+                leave->setEndDate(endDate);
+                leaveManagement.applyLeave(employeeId, std::move(leave));
+            }
+        }
+    }
+
+    void saveLeaves()
+    {
+        std::ofstream file(leaveDetailsFile);
+        for (const auto& [id, employeePtr]  : leaveManagement.getEmployees())
+        {   
+
+            for(const auto& leave: employeePtr->getLeaves())
+            {
+                file << employeePtr->getId() << " " << " "
+                        << leave->getType() << " " << leave->getStartDate() << " "
+                        << leave->getEndDate() << " " <<leave->requiresApproval() <<" "<< leave->getDuration() << " " << std::endl;
+            }            
+        }
+    }
+};
