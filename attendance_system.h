@@ -135,7 +135,7 @@ public:
         }
 
         int employeeId;
-        std::cout << "Enter employee ID to approve: ";
+        std::cout << "Enter employee ID: ";
         std::cin >> employeeId;
 
         auto &employees = leaveManagement.getEmployees();
@@ -147,8 +147,23 @@ public:
             {
                 if (leave->requiresApproval())
                 {
-                    // leave->setApproval(true);
-                    std::cout << "Leave approved." << std::endl;
+                    int c;
+                    std::cout << "Enter 1 to approve and 0 to reject:";
+                    std::cin >> c;
+                    if (c == 1)
+                    {
+                        leave->setStatus("Approved");
+                        std::cout << "Leave approved." << std::endl;
+                    }
+                    else if (c == 0)
+                    {
+                        leave->setStatus("Rejected");
+                        std::cout << "Leave rejected." << std::endl;
+                    }
+                    else
+                    {
+                        std::cout << "Invalid Input!<<" << std::endl;
+                    }
                 }
             }
         }

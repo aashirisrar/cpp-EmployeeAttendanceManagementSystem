@@ -23,6 +23,7 @@ public:
 
     void setStartDate(const std::string& date) { startDate = date; }
     void setEndDate(const std::string& date) { endDate = date; }
+    void setStatus(const std::string& status) {this->status = status; }
     const std::string& getStartDate() const { return startDate; }
     const std::string& getEndDate() const { return endDate; }
     const std::string& getStatus() const { return status; }

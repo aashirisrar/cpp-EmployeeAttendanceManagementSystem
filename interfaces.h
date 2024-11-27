@@ -13,6 +13,7 @@ public:
     virtual bool requiresApproval() const = 0;
     virtual void setStartDate(const std::string& date) = 0;
     virtual void setEndDate(const std::string& date) = 0;
+    virtual void setStatus(const std::string& status) = 0;
     virtual const std::string& getStartDate() const = 0;
     virtual const std::string& getStatus() const = 0;
     virtual const std::string& getEndDate() const = 0;
