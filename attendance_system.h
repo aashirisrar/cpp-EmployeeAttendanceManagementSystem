@@ -66,8 +66,13 @@ public:
     void generateAttendanceReport() {
         std::cout << "Attendance Report:" << std::endl;
         for (const auto& [id, employee] : leaveManagement.getEmployees()) {
-            std::cout << "Employee " << employee->getName() << " (ID: " << id << "): "
-                      << employee->getWorkingHours() << " hours" << std::endl;
+            float attendancePercentage = (employee->getWorkingHours() / (40.0f * 4)) * 100;
+
+            if(attendancePercentage < 80)
+            {
+                std::cout << "Employee " << employee->getName() << " (ID: " << id << "): "
+                        << employee->getWorkingHours() << " hours" <<  ", Attendance %: " << attendancePercentage << std::endl;
+            }
         }
     }
 

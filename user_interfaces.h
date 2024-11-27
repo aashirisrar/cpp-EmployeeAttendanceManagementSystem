@@ -45,7 +45,7 @@ public:
     void run() {
         while (true) {
             std::cout << "\nSupervisor Menu:\n"
-                      << "1. Generate Attendance Report\n"
+                      << "1. Generate Low Attendance Report\n"
                       << "2. Generate Leave Report\n"
                       << "3. Exit\n"
                       << "Enter your choice: ";
@@ -88,7 +88,7 @@ public:
                 std::cin >> employeeId;
                 std::cout << "Enter Leave Type (Casual/Earned/Official/Unpaid): ";
                 std::cin >> leaveType;
-                std::cout << "Enter Leave Duration (in hours): ";
+                std::cout << "Enter Leave Duration (in days): ";
                 std::cin >> duration;
                 std::cout << "Enter Start Date (YYYY-MM-DD): ";
                 std::cin >> startDate;
