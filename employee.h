@@ -22,7 +22,8 @@ public:
         if(leave->getType() == "Casual")
         {
             casualLeaveBalance = 15 - leave->getDuration();
-        } else if(leave->getType() == "Earned"){
+        } 
+        else if(leave->getType() == "Earned" && leave-> getStatus() == "Approved"){
             earnedLeaveBalance = 21 - leave->getDuration();
         }
         leaves.push_back(std::move(leave));

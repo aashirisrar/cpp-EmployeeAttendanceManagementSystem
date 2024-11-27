@@ -98,8 +98,11 @@ public:
             std::cout << "Employee " << employee->getName() << " (ID: " << id << "):" << std::endl;
             for (const auto &leave : employee->getLeaves())
             {
-                std::cout << "  " << leave->getType() << " leave for " << leave->getDuration() << " days" << std::endl
-                          << "  Leave Balance: " << "Casual " << employee->getCasualLeaveBalance() << ", Earned " << employee->getEarnedLeaveBalance() << std::endl;
+                if (leave->getStatus() == "Approved")
+                {
+                    std::cout << "  " << leave->getType() << " leave for " << leave->getDuration() << " days" << std::endl
+                              << "  Leave Balance: " << "Casual " << employee->getCasualLeaveBalance() << ", Earned " << employee->getEarnedLeaveBalance() << std::endl;
+                }
             }
         }
     }
@@ -110,10 +113,48 @@ public:
         for (const auto &[id, employee] : leaveManagement.getEmployees())
         {
             std::cout << "Employee " << employee->getName() << " (ID: " << id << "):" << std::endl;
+            std::cout << "  Leave Balance: " << "Casual " << employee->getCasualLeaveBalance() << ", Earned " << employee->getEarnedLeaveBalance() << std::endl;
+        }
+    }
+
+    void approveLeave()
+    {
+        std::cout << "Pending leaves:" << std::endl;
+        for (const auto &[id, employee] : leaveManagement.getEmployees())
+        {
+            std::cout << "Employee " << employee->getName() << " (ID: " << id << "):" << std::endl;
             for (const auto &leave : employee->getLeaves())
             {
-                std::cout << "  Leave Balance: " << "Casual " << employee->getCasualLeaveBalance() << ", Earned " << employee->getEarnedLeaveBalance() << std::endl;
+                if (leave->requiresApproval())
+                {
+                    std::cout << "Type: " << leave->getType()
+                              << ", From: " << leave->getStartDate() << ", To: " << leave->getEndDate() << "Duration: " << leave->getDuration() << std::endl
+                              << std::endl;
+                }
             }
+        }
+
+        int employeeId;
+        std::cout << "Enter employee ID to approve: ";
+        std::cin >> employeeId;
+
+        auto &employees = leaveManagement.getEmployees();
+        auto it = employees.find(employeeId);
+
+        if (it != employees.end())
+        {
+            for (const auto &leave : it->second->getLeaves())
+            {
+                if (leave->requiresApproval())
+                {
+                    // leave->setApproval(true);
+                    std::cout << "Leave approved." << std::endl;
+                }
+            }
+        }
+        else
+        {
+            std::cout << "Employee not found." << std::endl;
         }
     }
 
@@ -164,17 +205,11 @@ public:
         while (std::getline(file, line))
         {
             std::istringstream iss(line);
-            std::string type, startDate, endDate;
-            int employeeId;
-            int duration;
+            std::string type, startDate, endDate, status;
+            int employeeId, duration;
             bool approved;
-            iss >> employeeId >> type >> startDate >> endDate >> approved>> duration;
-            Leave leave(type, duration, approved);
-
-            // if (approved)
-            // {
-            //     leave.approve();
-            // }
+            iss >> employeeId >> type >> startDate >> endDate >> approved >> duration >> status;
+            Leave leave(type, duration, approved, status);
 
             for(const auto& [id, employeePtr] : leaveManagement.getEmployees())
             {
@@ -196,7 +231,7 @@ public:
             {
                 file << employeePtr->getId() << " " << " "
                         << leave->getType() << " " << leave->getStartDate() << " "
-                        << leave->getEndDate() << " " <<leave->requiresApproval() <<" "<< leave->getDuration() << " " << std::endl;
+                        << leave->getEndDate() << " " <<leave->requiresApproval() <<" "<< leave->getDuration() << " " << leave->getStatus() << std::endl;
             }            
         }
     }
