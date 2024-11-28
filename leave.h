@@ -3,14 +3,16 @@
 #include <memory>
 #include <stdexcept>
 #include <string>
+#include <algorithm>
 
 // Base Leave class implementation first
-class Leave : public ILeave {
+class Leave : public ILeave, public ISubject {
 protected:
     std::string type;
     int duration;
     bool needsApproval;
     std::unique_ptr<ILeaveState> state;
+    std::vector<std::shared_ptr<IObserver>> observers;
     std::string startDate;
     std::string endDate;
 
@@ -29,6 +31,7 @@ public:
 
     void setState(std::unique_ptr<ILeaveState> newState) override {
         state = std::move(newState);
+        notify("Leave status changed to: " + getStatus());
     }
 
     void approve() override {
@@ -43,67 +46,83 @@ public:
         }
     }
 
+    void attach(IObserver* observer) override {
+        observers.push_back(std::shared_ptr<IObserver>(observer));
+    }
+
+    void detach(IObserver *observer) override
+    {
+        observers.erase(
+            std::remove_if(observers.begin(), observers.end(),
+                        [&](const std::shared_ptr<IObserver> &obs)
+                        { return obs.get() == observer; }),
+            observers.end());
+    }
+
+    void notify(const std::string& message) override {
+        for (const auto& observer : observers) {
+            observer->update(message);
+        }
+    }
+
     std::string getStatus() const override {
         return state ? state->getStatus() : "Unknown";
     }
 };
 
-// Complete State class implementations before using them
 class ApprovedState : public ILeaveState {
 public:
-    void approve(Leave& leave) override {
+    void approve(Leave& leave) {
         std::cout << "Leave is already approved." << std::endl;
     }
 
-    void reject(Leave& leave) override {
+    void reject(Leave& leave) {
         std::cout << "Cannot reject an approved leave." << std::endl;
     }
 
-    std::string getStatus() const override {
+    std::string getStatus() const {
         return "Approved";
     }
 };
 
 class RejectedState : public ILeaveState {
 public:
-    void approve(Leave& leave) override {
+    void approve(Leave& leave) {
         std::cout << "Cannot approve a rejected leave." << std::endl;
     }
 
-    void reject(Leave& leave) override {
+    void reject(Leave& leave) {
         std::cout << "Leave is already rejected." << std::endl;
     }
 
-    std::string getStatus() const override {
+    std::string getStatus() const {
         return "Rejected";
     }
 };
 
-// Now PendingState can use the complete types
 class PendingState : public ILeaveState {
 public:
-    void approve(Leave& leave) override {
+    void approve(Leave& leave) {
         auto newState = std::unique_ptr<ILeaveState>(new ApprovedState());
         leave.setState(std::move(newState));
         std::cout << "Leave approved." << std::endl;
     }
 
-    void reject(Leave& leave) override {
+    void reject(Leave& leave) {
         auto newState = std::unique_ptr<ILeaveState>(new RejectedState());
         leave.setState(std::move(newState));
         std::cout << "Leave rejected." << std::endl;
     }
 
-    std::string getStatus() const override {
+    std::string getStatus() const {
         return "Pending";
     }
 };
 
-// Concrete leave types
 class CasualLeave : public Leave {
 public:
     CasualLeave(int duration) : Leave("Casual", duration, false) {
-        auto initialState = std::unique_ptr<ILeaveState>(new ApprovedState());
+        auto initialState = std::make_unique<ApprovedState>();
         setState(std::move(initialState));
     }
 };
@@ -111,7 +130,7 @@ public:
 class EarnedLeave : public Leave {
 public:
     EarnedLeave(int duration) : Leave("Earned", duration, true) {
-        auto initialState = std::unique_ptr<ILeaveState>(new PendingState());
+        auto initialState = std::make_unique<PendingState>();
         setState(std::move(initialState));
     }
 };
@@ -119,7 +138,7 @@ public:
 class OfficialLeave : public Leave {
 public:
     OfficialLeave(int duration) : Leave("Official", duration, false) {
-        auto initialState = std::unique_ptr<ILeaveState>(new ApprovedState());
+        auto initialState = std::make_unique<ApprovedState>();
         setState(std::move(initialState));
     }
 };
@@ -127,10 +146,11 @@ public:
 class UnpaidLeave : public Leave {
 public:
     UnpaidLeave(int duration) : Leave("Unpaid", duration, true) {
-        auto initialState = std::unique_ptr<ILeaveState>(new PendingState());
+        auto initialState = std::make_unique<PendingState>();
         setState(std::move(initialState));
     }
 };
+
 
 class LeaveFactory : public ILeaveFactory {
 public:
