@@ -5,6 +5,18 @@
 #include <stdexcept>
 #include <iostream>
 
+// Forward declaration to resolve circular dependency
+class Leave;
+class ILeaveState;
+
+class ILeaveState {
+public:
+    virtual ~ILeaveState() = default;
+    virtual void approve(Leave& leave) = 0;
+    virtual void reject(Leave& leave) = 0;
+    virtual std::string getStatus() const = 0;
+};
+
 class ILeave {
 public:
     virtual ~ILeave() = default;
@@ -13,10 +25,12 @@ public:
     virtual bool requiresApproval() const = 0;
     virtual void setStartDate(const std::string& date) = 0;
     virtual void setEndDate(const std::string& date) = 0;
-    virtual void setStatus(const std::string& status) = 0;
+    virtual void setState(std::unique_ptr<ILeaveState> newState) = 0;
     virtual const std::string& getStartDate() const = 0;
-    virtual const std::string& getStatus() const = 0;
     virtual const std::string& getEndDate() const = 0;
+    virtual std::string getStatus() const = 0;
+    virtual void approve() = 0;
+    virtual void reject() = 0;
 };
 
 class ILeaveFactory {
@@ -50,4 +64,3 @@ public:
     virtual ~IReportGenerator() = default;
     virtual void generateReport() = 0;
 };
-

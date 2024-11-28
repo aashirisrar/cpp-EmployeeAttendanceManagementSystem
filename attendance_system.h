@@ -156,13 +156,11 @@ public:
                         std::cin >> c;
                         if (c == 1)
                         {
-                            leave->setStatus("Approved");
-                            std::cout << "Leave approved." << std::endl;
+                            leave->approve();
                         }
                         else if (c == 0)
                         {
-                            leave->setStatus("Rejected");
-                            std::cout << "Leave rejected." << std::endl;
+                            leave->reject();
                         }
                         else
                         {
@@ -230,12 +228,18 @@ public:
             bool approved;
             iss >> employeeId >> type >> startDate >> endDate >> approved >> duration >> status;
 
-            for(const auto& [id, employeePtr] : leaveManagement.getEmployees())
+            for (const auto &[id, employeePtr] : leaveManagement.getEmployees())
             {
                 auto leave = leaveFactory->createLeave(type, duration);
                 leave->setStartDate(startDate);
                 leave->setEndDate(endDate);
-                leave->setStatus(status);
+                if (status == "Pending") {
+                    leave->setState(std::unique_ptr<ILeaveState>(new PendingState()));
+                } else if (status == "Approved") {
+                    leave->setState(std::unique_ptr<ILeaveState>(new ApprovedState()));
+                } else if (status == "Rejected") {
+                    leave->setState(std::unique_ptr<ILeaveState>(new RejectedState()));
+                }
                 leaveManagement.applyLeave(employeeId, std::move(leave));
             }
         }
