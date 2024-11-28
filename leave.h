@@ -6,7 +6,7 @@
 #include <algorithm>
 
 // Base Leave class implementation first
-class Leave : public ILeave, public ISubject {
+class Leave : public ILeave {
 protected:
     std::string type;
     int duration;
@@ -31,7 +31,6 @@ public:
 
     void setState(std::unique_ptr<ILeaveState> newState) override {
         state = std::move(newState);
-        notify("Leave status changed to: " + getStatus());
     }
 
     void approve() override {
@@ -43,25 +42,6 @@ public:
     void reject() override {
         if (state) {
             state->reject(*this);
-        }
-    }
-
-    void attach(IObserver* observer) override {
-        observers.push_back(std::shared_ptr<IObserver>(observer));
-    }
-
-    void detach(IObserver *observer) override
-    {
-        observers.erase(
-            std::remove_if(observers.begin(), observers.end(),
-                        [&](const std::shared_ptr<IObserver> &obs)
-                        { return obs.get() == observer; }),
-            observers.end());
-    }
-
-    void notify(const std::string& message) override {
-        for (const auto& observer : observers) {
-            observer->update(message);
         }
     }
 

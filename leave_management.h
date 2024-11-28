@@ -24,25 +24,36 @@ public:
         auto it = employees.find(employeeId);
         if (it != employees.end()) {
             it->second->applyForLeave(std::move(leave));
-            if (approvalStrategy && approvalStrategy->approveLeave(*it->second->getLeaves().back())) {
+            auto& currentLeave = it->second->getLeaves().back();
+            if (currentLeave->getStatus() == "Approved") {
                 notify("Leave approved for employee " + std::to_string(employeeId));
-            } else {
+            } else if(currentLeave->getStatus() == "Pending"){
+                notify("Leave pending for employee " + std::to_string(employeeId));
+            } else if(currentLeave->getStatus() == "Rejected") {
                 notify("Leave rejected for employee " + std::to_string(employeeId));
             }
+            attach(it->second.get());
         }
     }
 
     void attach(IObserver* observer) override {
-        observers.push_back(observer);
+        if (observer && std::find(observers.begin(), observers.end(), observer) == observers.end()) {
+            observers.push_back(observer);
+        }
     }
 
     void detach(IObserver* observer) override {
-        observers.erase(std::remove(observers.begin(), observers.end(), observer), observers.end());
+        observers.erase(
+            std::remove(observers.begin(), observers.end(), observer),
+            observers.end()
+        );
     }
 
     void notify(const std::string& message) override {
-        for (auto observer : observers) {
-            observer->update(message);
+        for (auto* observer : observers) {
+            if (observer) {
+                observer->update(message);
+            }
         }
     }
 
