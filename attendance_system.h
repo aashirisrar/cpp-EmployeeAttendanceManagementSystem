@@ -205,21 +205,22 @@ public:
             int employeeId, duration;
             bool approved;
             iss >> employeeId >> type >> startDate >> endDate >> approved >> duration >> status;
-
-            for (const auto &[id, employeePtr] : leaveManagement.getEmployees())
+            auto leave = leaveFactory->createLeave(type, duration);
+            leave->setStartDate(startDate);
+            leave->setEndDate(endDate);
+            if (status == "Pending")
             {
-                auto leave = leaveFactory->createLeave(type, duration);
-                leave->setStartDate(startDate);
-                leave->setEndDate(endDate);
-                if (status == "Pending") {
-                    leave->setState(std::unique_ptr<ILeaveState>(new PendingState()));
-                } else if (status == "Approved") {
-                    leave->setState(std::unique_ptr<ILeaveState>(new ApprovedState()));
-                } else if (status == "Rejected") {
-                    leave->setState(std::unique_ptr<ILeaveState>(new RejectedState()));
-                }
-                leaveManagement.applyLeave(employeeId, std::move(leave));
+                leave->setState(std::unique_ptr<ILeaveState>(new PendingState()));
             }
+            else if (status == "Approved")
+            {
+                leave->setState(std::unique_ptr<ILeaveState>(new ApprovedState()));
+            }
+            else if (status == "Rejected")
+            {
+                leave->setState(std::unique_ptr<ILeaveState>(new RejectedState()));
+            }
+            leaveManagement.applyLeave(employeeId, std::move(leave));
         }
     }
 
