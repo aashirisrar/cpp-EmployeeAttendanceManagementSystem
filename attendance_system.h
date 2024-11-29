@@ -237,6 +237,22 @@ public:
         }
     }
 
+    bool addEmployee(int employeeId, const std::string &name)
+    {
+        auto &employees = leaveManagement.getEmployees();
+        auto it = employees.find(employeeId);
+        if (it == employees.end())
+        {
+            auto employee = std::make_unique<Employee>(employeeId, name);
+            leaveManagement.addEmployee(std::move(employee));
+            std::cout << "Employee added successfully. Employee ID: " << employeeId << std::endl;
+            return 1;
+        }
+
+        std::cout << "Error: Employee with ID " << employeeId << " already exists.\n";
+        return 0;
+    }
+
     bool checkLeaveBalance(int employeeId, const std::string &type, int duration)
     {
         int casualLeaves=0, earnedLeaves=0;

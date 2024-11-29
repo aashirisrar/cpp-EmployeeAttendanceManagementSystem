@@ -7,13 +7,15 @@ int main() {
     GuardInterface guardInterface(system);
     SupervisorInterface supervisorInterface(system);
     EmployeeInterface employeeInterface(system);
+    AdminInterface adminInterface(system);
 
     while (true) {
         std::cout << "\nMain Menu:\n"
                   << "1. Guard Interface\n"
                   << "2. Supervisor Interface\n"
                   << "3. Employee Interface\n"
-                  << "4. Exit\n"
+                  << "4. Admin Interface\n"
+                  << "5. Exit\n"
                   << "Enter your choice: ";
         int choice;
         std::cin >> choice;
@@ -29,6 +31,9 @@ int main() {
                 employeeInterface.run();
                 break;
             case 4:
+                adminInterface.run();
+                break;
+            case 5:
                 return 0;
             default:
                 std::cout << "Invalid choice. Please try again.\n";

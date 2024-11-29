@@ -163,3 +163,42 @@ public:
         }
     }
 };
+
+class AdminInterface {
+private:
+    AttendanceSystem& system;
+
+public:
+    AdminInterface(AttendanceSystem& sys) : system(sys) {}
+
+    void run() {
+        while (true) {
+            std::cout << "\nAdmin Menu:\n"
+                      << "1. Add Employee\n"
+                      << "2. Exit\n"
+                      << "Enter your choice: ";
+            int choice;
+            std::cin >> choice;
+
+            if (choice == 1) {
+                int id;
+                std::string name;
+                std::cout << "Enter Employee Name: ";
+                std::cin.ignore();
+                std::getline(std::cin, name);
+                std::cout << "Enter Employee ID: ";
+                std::cin >> id;
+
+                if (system.addEmployee(id, name)) {
+                    std::cout << "Employee added successfully.\n";
+                } else {
+                    std::cout << "Failed to add employee. Employee ID might already exist.\n";
+                }
+            } else if (choice == 2) {
+                break;
+            } else {
+                std::cout << "Invalid choice. Please try again.\n";
+            }
+        }
+    }
+};
