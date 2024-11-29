@@ -4,6 +4,7 @@
 #include <memory>
 #include <stdexcept>
 #include <iostream>
+#include "leave_management.h"
 
 // Forward declaration to resolve circular dependency
 class Leave;

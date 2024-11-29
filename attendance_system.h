@@ -1,5 +1,6 @@
 #pragma once
 #include "leave_management.h"
+#include "reports.h"
 #include <fstream>
 #include <iostream>
 #include <iomanip>
@@ -64,16 +65,18 @@ public:
     }
 
     void generateAttendanceReport() {
-        std::cout << "Attendance Report:" << std::endl;
-        for (const auto& [id, employee] : leaveManagement.getEmployees()) {
-            float attendancePercentage = (employee->getWorkingHours() / (40.0f * 4)) * 100;
+        AttendanceReport report(this->leaveManagement);
+        report.generateReport();
+    }
 
-            if(attendancePercentage < 80)
-            {
-                std::cout << "Employee " << employee->getName() << " (ID: " << id << "): "
-                        << employee->getWorkingHours() << " hours" <<  ", Attendance %: " << attendancePercentage << std::endl;
-            }
-        }
+    void generateLeaveReport() {
+        LeaveReport report(this->leaveManagement);
+        report.generateReport();
+    }
+
+    void generateOutStandingLeaveReport() {
+        OutstandingLeaveReport report(this->leaveManagement);
+        report.generateReport();
     }
 
     void generateAttendanceReportForEmployee(int employeeId)
@@ -87,33 +90,6 @@ public:
             std::cout << "Attendance Report:" << std::endl;
             std::cout << "Employee " << it->second->getName() << " (ID: " << it->second->getId() << "): "
                       << it->second->getWorkingHours() << " hours" << ", Attendance %: " << attendancePercentage << std::endl;
-        }
-    }
-
-    void generateLeaveReport()
-    {
-        std::cout << "Leave Report:" << std::endl;
-        for (const auto &[id, employee] : leaveManagement.getEmployees())
-        {
-            std::cout << "Employee " << employee->getName() << " (ID: " << id << "):" << std::endl;
-            for (const auto &leave : employee->getLeaves())
-            {
-                if (leave->getStatus() == "Approved")
-                {
-                    std::cout << "  " << leave->getType() << " leave for " << leave->getDuration() << " days" << std::endl
-                              << "  Leave Balance: " << "Casual " << employee->getCasualLeaveBalance() << ", Earned " << employee->getEarnedLeaveBalance() << std::endl;
-                }
-            }
-        }
-    }
-
-    void generateOutStandingLeaveReport()
-    {
-        std::cout << "Leave Report:" << std::endl;
-        for (const auto &[id, employee] : leaveManagement.getEmployees())
-        {
-            std::cout << "Employee " << employee->getName() << " (ID: " << id << "):" << std::endl;
-            std::cout << "  Leave Balance: " << "Casual " << employee->getCasualLeaveBalance() << ", Earned " << employee->getEarnedLeaveBalance() << std::endl;
         }
     }
 
