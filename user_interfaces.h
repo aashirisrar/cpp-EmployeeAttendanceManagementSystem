@@ -25,8 +25,12 @@ public:
                 std::cin >> employeeId;
                 std::cout << "Enter Hours Worked: ";
                 std::cin >> hours;
-                system.markAttendance(employeeId, hours);
-                std::cout << "Attendance marked successfully.\n";
+                bool res = system.markAttendance(employeeId, hours);
+                if(res){
+                    std::cout << "Attendance marked successfully.\n";
+                } else {
+                    std::cout<<"Employee with this id doesn't exists!";
+                }
             } else if (choice == 2) {
                 break;
             } else {

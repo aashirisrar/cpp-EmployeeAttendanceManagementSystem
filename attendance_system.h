@@ -49,12 +49,15 @@ public:
         }
     }
 
-    void markAttendance(int employeeId, int hours) {
+    bool markAttendance(int employeeId, int hours) {
         auto& employees = leaveManagement.getEmployees();
         auto it = employees.find(employeeId);
         if (it != employees.end()) {
             it->second->addWorkingHours(hours);
+            return 1;
         }
+
+        return 0;
     }
 
     void applyLeave(int employeeId, const std::string& leaveType, int duration, const std::string& startDate, const std::string& endDate) {
