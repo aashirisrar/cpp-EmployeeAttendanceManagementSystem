@@ -8,13 +8,8 @@ class LeaveManagement : public ISubject {
 private:
     std::unordered_map<int, std::unique_ptr<Employee>> employees;
     std::vector<IObserver*> observers;
-    std::unique_ptr<ILeaveApprovalStrategy> approvalStrategy;
 
 public:
-    void setApprovalStrategy(std::unique_ptr<ILeaveApprovalStrategy> strategy) {
-        approvalStrategy = std::move(strategy);
-    }
-
     void addEmployee(std::unique_ptr<Employee> employee) {
         int id = employee->getId();
         employees[id] = std::move(employee);

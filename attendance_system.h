@@ -172,7 +172,6 @@ public:
         }
     }
 
-    // New function to save employee data to file
     void saveEmployeeDataToFile(const std::string& filename) {
         std::ofstream file(filename);
         if (!file.is_open()) {

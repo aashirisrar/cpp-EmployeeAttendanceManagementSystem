@@ -2,7 +2,7 @@
 #include <iostream>
 
 int main() {
-    AttendanceSystem system;  // The constructor now handles loading from files
+    AttendanceSystem system;  
 
     GuardInterface guardInterface(system);
     SupervisorInterface supervisorInterface(system);

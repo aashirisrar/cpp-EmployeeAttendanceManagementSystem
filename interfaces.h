@@ -40,11 +40,6 @@ public:
     virtual std::unique_ptr<ILeave> createLeave(const std::string& type, int duration) = 0;
 };
 
-class ILeaveApprovalStrategy {
-public:
-    virtual ~ILeaveApprovalStrategy() = default;
-    virtual bool approveLeave(const ILeave& leave) = 0;
-};
 
 class IObserver {
 public:
