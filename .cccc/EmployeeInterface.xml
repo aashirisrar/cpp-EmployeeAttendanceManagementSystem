@@ -2,14 +2,14 @@
 <!--Detailed report on module EmployeeInterface-->
 <CCCC_Project>
 <module_summary>
-<lines_of_code value="36" level="0" />
+<lines_of_code value="78" level="0" />
 <lines_of_code_per_member_function value="******" level="0" />
-<McCabes_cyclomatic_complexity value="4" level="0" />
+<McCabes_cyclomatic_complexity value="12" level="0" />
 <McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
-<lines_of_code value="0" level="0" />
-<lines_of_code_per_member_function value="********" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<lines_of_code value="2" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="39.000" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="6.000" level="1" />
 <weighted_methods_per_class_unity value="2" level="0" />
 <weighted_methods_per_class_visibility value="2" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
@@ -24,8 +24,8 @@
 </module_summary>
 <module_detail>
 <description>definition</description>
-<source_reference file="user_interfaces.h" line="68" />
-<lines_of_code value="5" level="0" />
+<source_reference file="user_interfaces.h" line="76" />
+<lines_of_code value="6" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
@@ -36,7 +36,7 @@
 <name>EmployeeInterface(AttendanceSystem &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="user_interfaces.h" line="73" />
+<source_reference file="user_interfaces.h" line="82" />
 </extent>
 <lines_of_code value="1" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
@@ -48,13 +48,13 @@
 <name>run()</name>
 <extent>
 <description>definition</description>
-<source_reference file="user_interfaces.h" line="75" />
+<source_reference file="user_interfaces.h" line="84" />
 </extent>
-<lines_of_code value="30" level="0" />
-<McCabes_cyclomatic_complexity value="4" level="0" />
-<lines_of_comment value="0" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<lines_of_code value="71" level="1" />
+<McCabes_cyclomatic_complexity value="12" level="1" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="35.500" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="6.000" level="1" />
 </member_function>
 </procedural_detail>
 <structural_detail>
@@ -68,11 +68,11 @@
 <concrete>false</concrete>
 <extent>
 <description>has by reference</description>
-<source_reference file="user_interfaces.h" line="70" />
+<source_reference file="user_interfaces.h" line="79" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="user_interfaces.h" line="73" />
+<source_reference file="user_interfaces.h" line="82" />
 </extent>
 </supplier_module>
 </module>

@@ -6,7 +6,7 @@ Report on software metrics
 <TABLE BORDER WIDTH=100%>
 <TR><TH COLSPAN=2>
 CCCC Software Metrics Report
-<BR> generated Wed Nov 27 03:38:32 2024
+<BR> generated Sun Dec 01 14:53:49 2024
 
 </TR>
 <TR>
@@ -64,25 +64,25 @@ Two variants on the information flow measure IF4 are also presented, one (IF4v) 
 <TR>
 <TH BGCOLOR="AQUA" WIDTH=70%>Metric</TH><TH BGCOLOR="AQUA" WIDTH=10%>Tag</TH><TH BGCOLOR="AQUA" WIDTH=10%>Overall</TH><TH BGCOLOR="AQUA" WIDTH=10%>Per Module</TH></TR>
 <TR>
-<TD>Number of modules</TD><TD>NOM</TD><TD ALIGN=RIGHT>    17</TD><TD>&nbsp;</TD></TR>
+<TD>Number of modules</TD><TD>NOM</TD><TD ALIGN=RIGHT>    29</TD><TD>&nbsp;</TD></TR>
 <TR>
-<TD WIDTH=700%>Lines of Code</TD><TD WIDTH=120%>LOC</TD><TD ALIGN=RIGHT>   296</TD><TD ALIGN=RIGHT>17.412</TD></TR>
+<TD WIDTH=700%>Lines of Code</TD><TD WIDTH=120%>LOC</TD><TD ALIGN=RIGHT>   681</TD><TD ALIGN=RIGHT>23.483</TD></TR>
 <TR>
-<TD>McCabe's Cyclomatic Number</TD><TD>MVG</TD><TD ALIGN=RIGHT>    35</TD><TD ALIGN=RIGHT> 2.059</TD></TR>
+<TD>McCabe's Cyclomatic Number</TD><TD>MVG</TD><TD ALIGN=RIGHT>   104</TD><TD ALIGN=RIGHT> 3.586</TD></TR>
 <TR>
-<TD>Lines of Comment</TD><TD>COM</TD><TD ALIGN=RIGHT>     5</TD><TD ALIGN=RIGHT> 0.294</TD></TR>
+<TD>Lines of Comment</TD><TD>COM</TD><TD ALIGN=RIGHT>     5</TD><TD ALIGN=RIGHT> 0.172</TD></TR>
 <TR>
-<TD>LOC/COM</TD><TD>L_C</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>59.200</STRONG></TD><TD>&nbsp;</TD></TR>
+<TD>LOC/COM</TD><TD>L_C</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>136.200</STRONG></TD><TD>&nbsp;</TD></TR>
 <TR>
-<TD>MVG/COM</TD><TD>M_C</TD><TD ALIGN=RIGHT BGCOLOR="YELLOW"><EM> 7.000</EM></TD><TD>&nbsp;</TD></TR>
+<TD>MVG/COM</TD><TD>M_C</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>20.800</STRONG></TD><TD>&nbsp;</TD></TR>
 <TR>
-<TD>Information Flow measure ( &nbsp;inclusive&nbsp;)</TD><TD>IF4</TD><TD ALIGN=RIGHT>    82</TD><TD ALIGN=RIGHT>   4.824</TD></TR>
+<TD>Information Flow measure ( &nbsp;inclusive&nbsp;)</TD><TD>IF4</TD><TD ALIGN=RIGHT>   944</TD><TD ALIGN=RIGHT>  32.552</TD></TR>
 <TR>
-<TD>Information Flow measure ( &nbsp;visible&nbsp;)</TD><TD>IF4v</TD><TD ALIGN=RIGHT>    36</TD><TD ALIGN=RIGHT>   2.118</TD></TR>
+<TD>Information Flow measure ( &nbsp;visible&nbsp;)</TD><TD>IF4v</TD><TD ALIGN=RIGHT>   857</TD><TD ALIGN=RIGHT>  29.552</TD></TR>
 <TR>
-<TD>Information Flow measure ( &nbsp;concrete&nbsp;)</TD><TD>IF4c</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>   0.059</TD></TR>
+<TD>Information Flow measure ( &nbsp;concrete&nbsp;)</TD><TD>IF4c</TD><TD ALIGN=RIGHT>   257</TD><TD ALIGN=RIGHT>   8.862</TD></TR>
 <TR>
-<TD>Lines of Code rejected by parser</TD><TD>REJ</TD><TD ALIGN=RIGHT>     4</TD><TD>&nbsp;</TD></TR>
+<TD>Lines of Code rejected by parser</TD><TD>REJ</TD><TD ALIGN=RIGHT>    14</TD><TD>&nbsp;</TD></TR>
 </TABLE>
 <H1><A NAME="procsum">Procedural Metrics Summary</A></H1>
 For descriptions of each of these metrics see the information preceding the project summary table.
@@ -92,33 +92,53 @@ The label cell for each row in this table provides a link to the functions table
 <TR>
 <TH BGCOLOR="AQUA">Module Name</TH><TH BGCOLOR="AQUA" WIDTH=8%>LOC</TH><TH BGCOLOR="AQUA" WIDTH=8%>MVG</TH><TH BGCOLOR="AQUA" WIDTH=8%>COM</TH><TH BGCOLOR="AQUA" WIDTH=8%>L_C</TH><TH BGCOLOR="AQUA" WIDTH=8%>M_C</TH></TR>
 <TR>
+<TD><A HREF="AdminInterface.html#procdet">
+AdminInterface</A>
+</TD><TD ALIGN=RIGHT>    33</TD><TD ALIGN=RIGHT>     5</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>******</STRONG></TD><TD ALIGN=RIGHT>******</TD></TR>
+<TR>
+<TD><A HREF="ApprovedState.html#procdet">
+ApprovedState</A>
+</TD><TD ALIGN=RIGHT>    12</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+<TR>
+<TD><A HREF="AttendanceReport.html#procdet">
+AttendanceReport</A>
+</TD><TD ALIGN=RIGHT>    15</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+<TR>
 <TD><A HREF="AttendanceSystem.html#procdet">
 AttendanceSystem</A>
-</TD><TD ALIGN=RIGHT>    96</TD><TD ALIGN=RIGHT>    14</TD><TD ALIGN=RIGHT>     4</TD><TD ALIGN=RIGHT BGCOLOR="YELLOW"><EM>24.000</EM></TD><TD ALIGN=RIGHT> 3.500</TD></TR>
+</TD><TD ALIGN=RIGHT>   238</TD><TD ALIGN=RIGHT>    41</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>238.000</STRONG></TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>41.000</STRONG></TD></TR>
+<TR>
+<TD><A HREF="CasualLeave.html#procdet">
+CasualLeave</A>
+</TD><TD ALIGN=RIGHT>     7</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+<TR>
+<TD><A HREF="EarnedLeave.html#procdet">
+EarnedLeave</A>
+</TD><TD ALIGN=RIGHT>     7</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
 <TR>
 <TD><A HREF="Employee.html#procdet">
 Employee</A>
-</TD><TD ALIGN=RIGHT>    13</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+</TD><TD ALIGN=RIGHT>    15</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
 <TR>
 <TD><A HREF="EmployeeInterface.html#procdet">
 EmployeeInterface</A>
-</TD><TD ALIGN=RIGHT>    36</TD><TD ALIGN=RIGHT>     4</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>******</STRONG></TD><TD ALIGN=RIGHT>------</TD></TR>
+</TD><TD ALIGN=RIGHT>    78</TD><TD ALIGN=RIGHT>    12</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>39.000</STRONG></TD><TD ALIGN=RIGHT BGCOLOR="YELLOW"><EM> 6.000</EM></TD></TR>
 <TR>
 <TD><A HREF="GuardInterface.html#procdet">
 GuardInterface</A>
-</TD><TD ALIGN=RIGHT>    29</TD><TD ALIGN=RIGHT>     4</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>******</STRONG></TD><TD ALIGN=RIGHT>------</TD></TR>
+</TD><TD ALIGN=RIGHT>    33</TD><TD ALIGN=RIGHT>     5</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>******</STRONG></TD><TD ALIGN=RIGHT>******</TD></TR>
 <TR>
 <TD><A HREF="ILeave.html#procdet">
 ILeave</A>
-</TD><TD ALIGN=RIGHT>    11</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
-<TR>
-<TD><A HREF="ILeaveApprovalStrategy.html#procdet">
-ILeaveApprovalStrategy</A>
-</TD><TD ALIGN=RIGHT>     5</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+</TD><TD ALIGN=RIGHT>    15</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
 <TR>
 <TD><A HREF="ILeaveFactory.html#procdet">
 ILeaveFactory</A>
 </TD><TD ALIGN=RIGHT>     5</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+<TR>
+<TD><A HREF="ILeaveState.html#procdet">
+ILeaveState</A>
+</TD><TD ALIGN=RIGHT>     8</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
 <TR>
 <TD><A HREF="IObserver.html#procdet">
 IObserver</A>
@@ -126,7 +146,7 @@ IObserver</A>
 <TR>
 <TD><A HREF="IReportGenerator.html#procdet">
 IReportGenerator</A>
-</TD><TD ALIGN=RIGHT>     5</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+</TD><TD ALIGN=RIGHT>     4</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
 <TR>
 <TD><A HREF="ISubject.html#procdet">
 ISubject</A>
@@ -134,19 +154,47 @@ ISubject</A>
 <TR>
 <TD><A HREF="Leave.html#procdet">
 Leave</A>
-</TD><TD ALIGN=RIGHT>    11</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+</TD><TD ALIGN=RIGHT>    13</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+<TR>
+<TD><A HREF="LeaveFactory.html#procdet">
+LeaveFactory</A>
+</TD><TD ALIGN=RIGHT>     9</TD><TD ALIGN=RIGHT>     8</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>******</STRONG></TD></TR>
 <TR>
 <TD><A HREF="LeaveManagement.html#procdet">
 LeaveManagement</A>
 </TD><TD ALIGN=RIGHT>    11</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
 <TR>
+<TD><A HREF="LeaveReport.html#procdet">
+LeaveReport</A>
+</TD><TD ALIGN=RIGHT>    17</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+<TR>
+<TD><A HREF="OfficialLeave.html#procdet">
+OfficialLeave</A>
+</TD><TD ALIGN=RIGHT>     7</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+<TR>
+<TD><A HREF="OutstandingLeaveReport.html#procdet">
+OutstandingLeaveReport</A>
+</TD><TD ALIGN=RIGHT>    12</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+<TR>
+<TD><A HREF="PendingState.html#procdet">
+PendingState</A>
+</TD><TD ALIGN=RIGHT>    16</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+<TR>
+<TD><A HREF="RejectedState.html#procdet">
+RejectedState</A>
+</TD><TD ALIGN=RIGHT>    12</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+<TR>
 <TD><A HREF="SupervisorInterface.html#procdet">
 SupervisorInterface</A>
-</TD><TD ALIGN=RIGHT>    26</TD><TD ALIGN=RIGHT>     5</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>******</STRONG></TD><TD ALIGN=RIGHT>******</TD></TR>
+</TD><TD ALIGN=RIGHT>    29</TD><TD ALIGN=RIGHT>     6</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>******</STRONG></TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>******</STRONG></TD></TR>
+<TR>
+<TD><A HREF="UnpaidLeave.html#procdet">
+UnpaidLeave</A>
+</TD><TD ALIGN=RIGHT>     7</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
 <TR>
 <TD><A HREF="anonymous.html#procdet">
 anonymous</A>
-</TD><TD ALIGN=RIGHT>    32</TD><TD ALIGN=RIGHT>     7</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>32.000</STRONG></TD><TD ALIGN=RIGHT BGCOLOR="YELLOW"><EM> 7.000</EM></TD></TR>
+</TD><TD ALIGN=RIGHT>    52</TD><TD ALIGN=RIGHT>    10</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>******</STRONG></TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>******</STRONG></TD></TR>
 <TR>
 <TD><A HREF="bool.html#procdet">
 bool</A>
@@ -177,9 +225,29 @@ The label cell for each row in this table provides a link to the module summary 
 <TR>
 <TH BGCOLOR="AQUA" WIDTH=50%>Module Name</TH><TH BGCOLOR="AQUA" WIDTH=10%>WMC1</TH><TH BGCOLOR="AQUA" WIDTH=10%>WMCv</TH><TH BGCOLOR="AQUA" WIDTH=10%>DIT</TH><TH BGCOLOR="AQUA" WIDTH=10%>NOC</TH><TH BGCOLOR="AQUA" WIDTH=10%>CBO</TH></TR>
 <TR>
+<TD><A HREF="AdminInterface.html#summary">
+AdminInterface</A>
+</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
+<TR>
+<TD><A HREF="ApprovedState.html#summary">
+ApprovedState</A>
+</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD></TR>
+<TR>
+<TD><A HREF="AttendanceReport.html#summary">
+AttendanceReport</A>
+</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD></TR>
+<TR>
 <TD><A HREF="AttendanceSystem.html#summary">
 AttendanceSystem</A>
-</TD><TD ALIGN=RIGHT>     8</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     6</TD></TR>
+</TD><TD ALIGN=RIGHT>    16</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     7</TD></TR>
+<TR>
+<TD><A HREF="CasualLeave.html#summary">
+CasualLeave</A>
+</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
+<TR>
+<TD><A HREF="EarnedLeave.html#summary">
+EarnedLeave</A>
+</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
 <TR>
 <TD><A HREF="Employee.html#summary">
 Employee</A>
@@ -197,13 +265,13 @@ GuardInterface</A>
 ILeave</A>
 </TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD></TR>
 <TR>
-<TD><A HREF="ILeaveApprovalStrategy.html#summary">
-ILeaveApprovalStrategy</A>
-</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
-<TR>
 <TD><A HREF="ILeaveFactory.html#summary">
 ILeaveFactory</A>
-</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD></TR>
+<TR>
+<TD><A HREF="ILeaveState.html#summary">
+ILeaveState</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     3</TD></TR>
 <TR>
 <TD><A HREF="IObserver.html#summary">
 IObserver</A>
@@ -211,7 +279,7 @@ IObserver</A>
 <TR>
 <TD><A HREF="IReportGenerator.html#summary">
 IReportGenerator</A>
-</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     3</TD></TR>
 <TR>
 <TD><A HREF="ISubject.html#summary">
 ISubject</A>
@@ -219,19 +287,47 @@ ISubject</A>
 <TR>
 <TD><A HREF="Leave.html#summary">
 Leave</A>
-</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     3</TD></TR>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     4</TD><TD ALIGN=RIGHT>    11</TD></TR>
+<TR>
+<TD><A HREF="LeaveFactory.html#summary">
+LeaveFactory</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
 <TR>
 <TD><A HREF="LeaveManagement.html#summary">
 LeaveManagement</A>
-</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD></TR>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     5</TD></TR>
+<TR>
+<TD><A HREF="LeaveReport.html#summary">
+LeaveReport</A>
+</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD></TR>
+<TR>
+<TD><A HREF="OfficialLeave.html#summary">
+OfficialLeave</A>
+</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
+<TR>
+<TD><A HREF="OutstandingLeaveReport.html#summary">
+OutstandingLeaveReport</A>
+</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD></TR>
+<TR>
+<TD><A HREF="PendingState.html#summary">
+PendingState</A>
+</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD></TR>
+<TR>
+<TD><A HREF="RejectedState.html#summary">
+RejectedState</A>
+</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD></TR>
 <TR>
 <TD><A HREF="SupervisorInterface.html#summary">
 SupervisorInterface</A>
 </TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
 <TR>
+<TD><A HREF="UnpaidLeave.html#summary">
+UnpaidLeave</A>
+</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
+<TR>
 <TD><A HREF="anonymous.html#summary">
 anonymous</A>
-</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+</TD><TD ALIGN=RIGHT>    12</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
 <TR>
 <TD><A HREF="bool.html#summary">
 bool</A>
@@ -243,7 +339,7 @@ string</A>
 <TR>
 <TD><A HREF="unique_ptr.html#summary">
 unique_ptr</A>
-</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD></TR>
 </TABLE>
 <H1><A NAME="structsum">Structural Metrics Summary</A></H1>
 <UL>
@@ -267,9 +363,29 @@ The label cell for each row in this table provides a link to the relationships t
 </TR>
 <TH BGCOLOR="AQUA" WIDTH=7%>vis</TH><TH BGCOLOR="AQUA" WIDTH=7%>con</TH><TH BGCOLOR="AQUA" WIDTH=7%>inc</TH><TH BGCOLOR="AQUA" WIDTH=7%>vis</TH><TH BGCOLOR="AQUA" WIDTH=7%>con</TH><TH BGCOLOR="AQUA" WIDTH=7%>incl</TH><TH BGCOLOR="AQUA" WIDTH=7%>vis</TH><TH BGCOLOR="AQUA" WIDTH=7%>con</TH><TH BGCOLOR="AQUA" WIDTH=7%>inc</TH></TR>
 <TR>
+<TD><A HREF="AdminInterface.html#structdet">
+AdminInterface</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+<TR>
+<TD><A HREF="ApprovedState.html#structdet">
+ApprovedState</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+<TR>
+<TD><A HREF="AttendanceReport.html#structdet">
+AttendanceReport</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+<TR>
 <TD><A HREF="AttendanceSystem.html#structdet">
 AttendanceSystem</A>
-</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT BGCOLOR="YELLOW"><EM>    36</EM></TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>    81</TD></TR>
+</TD><TD ALIGN=RIGHT>     4</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     4</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT BGCOLOR="YELLOW"><EM>    64</EM></TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT BGCOLOR="YELLOW"><EM>   144</EM></TD></TR>
+<TR>
+<TD><A HREF="CasualLeave.html#structdet">
+CasualLeave</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+<TR>
+<TD><A HREF="EarnedLeave.html#structdet">
+EarnedLeave</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
 <TR>
 <TD><A HREF="Employee.html#structdet">
 Employee</A>
@@ -287,13 +403,13 @@ GuardInterface</A>
 ILeave</A>
 </TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
 <TR>
-<TD><A HREF="ILeaveApprovalStrategy.html#structdet">
-ILeaveApprovalStrategy</A>
-</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
-<TR>
 <TD><A HREF="ILeaveFactory.html#structdet">
 ILeaveFactory</A>
-</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+<TR>
+<TD><A HREF="ILeaveState.html#structdet">
+ILeaveState</A>
+</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
 <TR>
 <TD><A HREF="IObserver.html#structdet">
 IObserver</A>
@@ -301,7 +417,7 @@ IObserver</A>
 <TR>
 <TD><A HREF="IReportGenerator.html#structdet">
 IReportGenerator</A>
-</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
 <TR>
 <TD><A HREF="ISubject.html#structdet">
 ISubject</A>
@@ -309,15 +425,43 @@ ISubject</A>
 <TR>
 <TD><A HREF="Leave.html#structdet">
 Leave</A>
-</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+</TD><TD ALIGN=RIGHT BGCOLOR="YELLOW"><EM>     7</EM></TD><TD ALIGN=RIGHT>     4</TD><TD ALIGN=RIGHT>     7</TD><TD ALIGN=RIGHT>     4</TD><TD ALIGN=RIGHT>     4</TD><TD ALIGN=RIGHT>     4</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>   784</STRONG></TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>   256</STRONG></TD><TD ALIGN=RIGHT BGCOLOR="YELLOW"><EM>   784</EM></TD></TR>
+<TR>
+<TD><A HREF="LeaveFactory.html#structdet">
+LeaveFactory</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
 <TR>
 <TD><A HREF="LeaveManagement.html#structdet">
 LeaveManagement</A>
-</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD></TR>
+</TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     4</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     9</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>    16</TD></TR>
+<TR>
+<TD><A HREF="LeaveReport.html#structdet">
+LeaveReport</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+<TR>
+<TD><A HREF="OfficialLeave.html#structdet">
+OfficialLeave</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+<TR>
+<TD><A HREF="OutstandingLeaveReport.html#structdet">
+OutstandingLeaveReport</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+<TR>
+<TD><A HREF="PendingState.html#structdet">
+PendingState</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+<TR>
+<TD><A HREF="RejectedState.html#structdet">
+RejectedState</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
 <TR>
 <TD><A HREF="SupervisorInterface.html#structdet">
 SupervisorInterface</A>
 </TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+<TR>
+<TD><A HREF="UnpaidLeave.html#structdet">
+UnpaidLeave</A>
+</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
 <TR>
 <TD><A HREF="anonymous.html#structdet">
 anonymous</A>
@@ -333,7 +477,7 @@ string</A>
 <TR>
 <TD><A HREF="unique_ptr.html#structdet">
 unique_ptr</A>
-</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
 </TABLE>
 <H1><A NAME="other">Other Extents</A></H1>
 <TABLE BORDER WIDTH=100%>
@@ -348,9 +492,30 @@ unique_ptr</A>
 <TR><TD><CODE><A HREF="cccc_src.html#interfaces.h:         1">interfaces.h:1</A></CODE><BR>
 </TD>
 <TD>&lt;file scope items&gt;</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
-<TR><TD><CODE><A HREF="cccc_src.html#leave_management.h:        20">leave_management.h:20</A></CODE><BR>
+<TR><TD><CODE><A HREF="cccc_src.html#leave.h:        23">leave.h:23</A></CODE><BR>
 </TD>
-<TD>employees [ id </TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+<TD>override { return </TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
+<TR><TD><CODE><A HREF="cccc_src.html#leave.h:        24">leave.h:24</A></CODE><BR>
+</TD>
+<TD>override { return </TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
+<TR><TD><CODE><A HREF="cccc_src.html#leave.h:        25">leave.h:25</A></CODE><BR>
+</TD>
+<TD>override { return </TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
+<TR><TD><CODE><A HREF="cccc_src.html#leave.h:        29">leave.h:29</A></CODE><BR>
+</TD>
+<TD>override { return </TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
+<TR><TD><CODE><A HREF="cccc_src.html#leave.h:        30">leave.h:30</A></CODE><BR>
+</TD>
+<TD>override { return </TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     1</TD></TR>
+<TR><TD><CODE><A HREF="cccc_src.html#leave.h:        48">leave.h:48</A></CODE><BR>
+</TD>
+<TD>override { return </TD><TD ALIGN=RIGHT>     3</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     2</TD></TR>
+<TR><TD><CODE><A HREF="cccc_src.html#leave.h:         1">leave.h:1</A></CODE><BR>
+</TD>
+<TD>&lt;file scope items&gt;</TD><TD ALIGN=RIGHT>     2</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
+<TR><TD><CODE><A HREF="cccc_src.html#reports.h:         1">reports.h:1</A></CODE><BR>
+</TD>
+<TD>&lt;file scope items&gt;</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>
 <TR><TD><CODE><A HREF="cccc_src.html#user_interfaces.h:         1">user_interfaces.h:1</A></CODE><BR>
 </TD>
 <TD>&lt;file scope items&gt;</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD></TR>

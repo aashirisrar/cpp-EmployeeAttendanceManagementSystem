@@ -2,7 +2,7 @@
 <!--Detailed report on module ILeave-->
 <CCCC_Project>
 <module_summary>
-<lines_of_code value="11" level="0" />
+<lines_of_code value="15" level="0" />
 <lines_of_code_per_member_function value="******" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
 <McCabes_cyclomatic_complexity_per_member_function value="******" level="0" />
@@ -24,8 +24,8 @@
 </module_summary>
 <module_detail>
 <description>definition</description>
-<source_reference file="interfaces.h" line="8" />
-<lines_of_code value="11" level="0" />
+<source_reference file="interfaces.h" line="21" />
+<lines_of_code value="15" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
@@ -42,7 +42,7 @@
 <concrete>true</concrete>
 <extent>
 <description>inheritance</description>
-<source_reference file="leave.h" line="7" />
+<source_reference file="leave.h" line="9" />
 </extent>
 </client_module>
 <supplier_module>

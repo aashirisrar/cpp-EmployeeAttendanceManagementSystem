@@ -26,11 +26,11 @@ Detailed report on module LeaveManagement
 <TR>
 <TD>Number of Children</TD><TD>NOC</TD><TD ALIGN=RIGHT>     0</TD><TD>&nbsp;</TD></TR>
 <TR>
-<TD>Coupling between objects</TD><TD>CBO</TD><TD ALIGN=RIGHT>     2</TD><TD>&nbsp;</TD></TR>
+<TD>Coupling between objects</TD><TD>CBO</TD><TD ALIGN=RIGHT>     5</TD><TD>&nbsp;</TD></TR>
 <TR>
-<TD>Information Flow measure ( &nbsp;inclusive&nbsp;)</TD><TD>IF4</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>********</STRONG></TD></TR>
+<TD>Information Flow measure ( &nbsp;inclusive&nbsp;)</TD><TD>IF4</TD><TD ALIGN=RIGHT>    16</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>********</STRONG></TD></TR>
 <TR>
-<TD>Information Flow measure ( &nbsp;visible&nbsp;)</TD><TD>IF4v</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>********</TD></TR>
+<TD>Information Flow measure ( &nbsp;visible&nbsp;)</TD><TD>IF4v</TD><TD ALIGN=RIGHT>     9</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>********</STRONG></TD></TR>
 <TR>
 <TD>Information Flow measure ( &nbsp;concrete&nbsp;)</TD><TD>IF4c</TD><TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>********</STRONG></TD></TR>
 </TABLE>
@@ -53,9 +53,30 @@ Detailed report on module LeaveManagement
 <TR><TH WIDTH=50%>Clients</TH><TH WIDTH=50%>Suppliers</TH></TR>
 <TR>
 <TD WIDTH=50%>
+AttendanceReport [V] <BR>
+has by reference &nbsp;
+<CODE><A HREF="cccc_src.html#reports.h:         7">reports.h:7</A></CODE><BR>
+pass by reference &nbsp;
+<CODE><A HREF="cccc_src.html#reports.h:         9">reports.h:9</A></CODE><BR>
+<BR>
+<BR>
 AttendanceSystem [C] <BR>
 has by value &nbsp;
-<CODE><A HREF="cccc_src.html#attendance_system.h:        10">attendance_system.h:10</A></CODE><BR>
+<CODE><A HREF="cccc_src.html#attendance_system.h:        11">attendance_system.h:11</A></CODE><BR>
+<BR>
+<BR>
+LeaveReport [V] <BR>
+has by reference &nbsp;
+<CODE><A HREF="cccc_src.html#reports.h:        25">reports.h:25</A></CODE><BR>
+pass by reference &nbsp;
+<CODE><A HREF="cccc_src.html#reports.h:        27">reports.h:27</A></CODE><BR>
+<BR>
+<BR>
+OutstandingLeaveReport [V] <BR>
+has by reference &nbsp;
+<CODE><A HREF="cccc_src.html#reports.h:        44">reports.h:44</A></CODE><BR>
+pass by reference &nbsp;
+<CODE><A HREF="cccc_src.html#reports.h:        46">reports.h:46</A></CODE><BR>
 <BR>
 <BR>
 &nbsp;

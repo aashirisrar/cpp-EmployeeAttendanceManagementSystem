@@ -14,11 +14,11 @@
 <weighted_methods_per_class_visibility value="0" level="0" />
 <depth_of_inheritance_tree value="1" level="0" />
 <number_of_children value="0" level="0" />
-<coupling_between_objects value="2" level="0" />
-<IF4 value="1" level="0" />
+<coupling_between_objects value="5" level="0" />
+<IF4 value="16" level="0" />
 <IF4_per_member_function value="********" level="2" />
-<IF4_visible value="0" level="0" />
-<IF4_visible_per_member_function value="********" level="0" />
+<IF4_visible value="9" level="0" />
+<IF4_visible_per_member_function value="********" level="2" />
 <IF4_concrete value="1" level="0" />
 <IF4_concrete_per_member_function value="********" level="2" />
 </module_summary>
@@ -37,12 +37,45 @@
 <module>
 <name>LeaveManagement</name>
 <client_module>
+<name>AttendanceReport</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>has by reference</description>
+<source_reference file="reports.h" line="7" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="reports.h" line="9" />
+</extent>
 <name>AttendanceSystem</name>
 <visible>false</visible>
 <concrete>true</concrete>
 <extent>
 <description>has by value</description>
-<source_reference file="attendance_system.h" line="10" />
+<source_reference file="attendance_system.h" line="11" />
+</extent>
+<name>LeaveReport</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>has by reference</description>
+<source_reference file="reports.h" line="25" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="reports.h" line="27" />
+</extent>
+<name>OutstandingLeaveReport</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>has by reference</description>
+<source_reference file="reports.h" line="44" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="reports.h" line="46" />
 </extent>
 </client_module>
 <supplier_module>

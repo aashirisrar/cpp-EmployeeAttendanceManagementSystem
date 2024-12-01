@@ -2,10 +2,10 @@
 <!--Detailed report on module Employee-->
 <CCCC_Project>
 <module_summary>
-<lines_of_code value="13" level="0" />
+<lines_of_code value="15" level="0" />
 <lines_of_code_per_member_function value="******" level="0" />
-<McCabes_cyclomatic_complexity value="0" level="0" />
-<McCabes_cyclomatic_complexity_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
 <lines_of_code value="0" level="0" />
 <lines_of_code_per_member_function value="********" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
@@ -25,8 +25,8 @@
 <module_detail>
 <description>definition</description>
 <source_reference file="employee.h" line="8" />
-<lines_of_code value="13" level="0" />
-<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_code value="15" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
 <McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />

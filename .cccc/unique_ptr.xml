@@ -14,7 +14,7 @@
 <weighted_methods_per_class_visibility value="0" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
 <number_of_children value="0" level="0" />
-<coupling_between_objects value="1" level="0" />
+<coupling_between_objects value="2" level="0" />
 <IF4 value="0" level="0" />
 <IF4_per_member_function value="********" level="0" />
 <IF4_visible value="0" level="0" />
@@ -35,7 +35,14 @@
 <concrete>true</concrete>
 <extent>
 <description>has by value</description>
-<source_reference file="attendance_system.h" line="11" />
+<source_reference file="attendance_system.h" line="12" />
+</extent>
+<name>Leave</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="leave.h" line="14" />
 </extent>
 </client_module>
 <supplier_module>

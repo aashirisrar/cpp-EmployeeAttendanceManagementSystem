@@ -2,30 +2,30 @@
 <!--Detailed report on module AttendanceSystem-->
 <CCCC_Project>
 <module_summary>
-<lines_of_code value="96" level="0" />
+<lines_of_code value="238" level="0" />
 <lines_of_code_per_member_function value="******" level="0" />
-<McCabes_cyclomatic_complexity value="14" level="0" />
+<McCabes_cyclomatic_complexity value="41" level="0" />
 <McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
-<lines_of_code value="4" level="0" />
+<lines_of_code value="1" level="0" />
 <lines_of_code_per_member_function value="********" level="2" />
-<lines_of_code_per_line_of_comment value="24.000" level="1" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="3.500" level="0" />
-<weighted_methods_per_class_unity value="8" level="0" />
+<lines_of_code_per_line_of_comment value="238.000" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="41.000" level="2" />
+<weighted_methods_per_class_unity value="16" level="0" />
 <weighted_methods_per_class_visibility value="0" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
 <number_of_children value="0" level="0" />
-<coupling_between_objects value="6" level="0" />
-<IF4 value="81" level="0" />
+<coupling_between_objects value="7" level="0" />
+<IF4 value="144" level="1" />
 <IF4_per_member_function value="********" level="2" />
-<IF4_visible value="36" level="1" />
+<IF4_visible value="64" level="1" />
 <IF4_visible_per_member_function value="********" level="2" />
 <IF4_concrete value="0" level="0" />
 <IF4_concrete_per_member_function value="********" level="0" />
 </module_summary>
 <module_detail>
 <description>definition</description>
-<source_reference file="attendance_system.h" line="8" />
-<lines_of_code value="8" level="0" />
+<source_reference file="attendance_system.h" line="9" />
+<lines_of_code value="7" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
@@ -36,10 +36,22 @@
 <name>AttendanceSystem(const string &amp;,const string &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="attendance_system.h" line="16" />
+<source_reference file="attendance_system.h" line="17" />
 </extent>
-<lines_of_code value="4" level="0" />
+<lines_of_code value="5" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>addEmployee(int,const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="attendance_system.h" line="241" />
+</extent>
+<lines_of_code value="14" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
 <McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
@@ -48,7 +60,7 @@
 <name>applyLeave(int,const string &amp;,int,const string &amp;,const string &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="attendance_system.h" line="57" />
+<source_reference file="attendance_system.h" line="63" />
 </extent>
 <lines_of_code value="6" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
@@ -57,12 +69,48 @@
 <McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
 </member_function>
 <member_function>
+<name>approveLeave()</name>
+<extent>
+<description>definition</description>
+<source_reference file="attendance_system.h" line="99" />
+</extent>
+<lines_of_code value="55" level="1" />
+<McCabes_cyclomatic_complexity value="11" level="1" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+</member_function>
+<member_function>
+<name>checkLeaveBalance(int,const string &amp;,int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="attendance_system.h" line="257" />
+</extent>
+<lines_of_code value="20" level="0" />
+<McCabes_cyclomatic_complexity value="8" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+</member_function>
+<member_function>
 <name>generateAttendanceReport()</name>
 <extent>
 <description>definition</description>
-<source_reference file="attendance_system.h" line="64" />
+<source_reference file="attendance_system.h" line="70" />
 </extent>
-<lines_of_code value="7" level="0" />
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>generateAttendanceReportForEmployee(int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="attendance_system.h" line="85" />
+</extent>
+<lines_of_code value="12" level="0" />
 <McCabes_cyclomatic_complexity value="1" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
@@ -72,10 +120,34 @@
 <name>generateLeaveReport()</name>
 <extent>
 <description>definition</description>
-<source_reference file="attendance_system.h" line="72" />
+<source_reference file="attendance_system.h" line="75" />
 </extent>
-<lines_of_code value="9" level="0" />
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>generateLeaveReportForEmployee(int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="attendance_system.h" line="158" />
+</extent>
+<lines_of_code value="15" level="0" />
 <McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>generateOutStandingLeaveReport()</name>
+<extent>
+<description>definition</description>
+<source_reference file="attendance_system.h" line="80" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
 <McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
@@ -84,9 +156,21 @@
 <name>loadEmployeesFromFile()</name>
 <extent>
 <description>definition</description>
-<source_reference file="attendance_system.h" line="25" />
+<source_reference file="attendance_system.h" line="28" />
 </extent>
 <lines_of_code value="21" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>loadLeaves()</name>
+<extent>
+<description>definition</description>
+<source_reference file="attendance_system.h" line="197" />
+</extent>
+<lines_of_code value="29" level="0" />
 <McCabes_cyclomatic_complexity value="4" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="******" level="2" />
@@ -96,10 +180,10 @@
 <name>markAttendance(int,int)</name>
 <extent>
 <description>definition</description>
-<source_reference file="attendance_system.h" line="49" />
+<source_reference file="attendance_system.h" line="52" />
 </extent>
-<lines_of_code value="7" level="0" />
-<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_code value="9" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
 <McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
@@ -108,21 +192,33 @@
 <name>saveEmployeeDataToFile(const string &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="attendance_system.h" line="83" />
+<source_reference file="attendance_system.h" line="175" />
 </extent>
-<lines_of_code value="31" level="1" />
-<McCabes_cyclomatic_complexity value="6" level="0" />
-<lines_of_comment value="4" level="0" />
-<lines_of_code_per_line_of_comment value="7.750" level="1" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="1.500" level="0" />
+<lines_of_code value="16" level="0" />
+<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>saveLeaves()</name>
+<extent>
+<description>definition</description>
+<source_reference file="attendance_system.h" line="227" />
+</extent>
+<lines_of_code value="13" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
 </member_function>
 <member_function>
 <name>~AttendanceSystem()</name>
 <extent>
 <description>definition</description>
-<source_reference file="attendance_system.h" line="21" />
+<source_reference file="attendance_system.h" line="23" />
 </extent>
-<lines_of_code value="3" level="0" />
+<lines_of_code value="4" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
@@ -133,38 +229,49 @@
 <module>
 <name>AttendanceSystem</name>
 <client_module>
+<name>AdminInterface</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>has by reference</description>
+<source_reference file="user_interfaces.h" line="169" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="user_interfaces.h" line="172" />
+</extent>
 <name>EmployeeInterface</name>
 <visible>true</visible>
 <concrete>false</concrete>
 <extent>
 <description>has by reference</description>
-<source_reference file="user_interfaces.h" line="70" />
+<source_reference file="user_interfaces.h" line="79" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="user_interfaces.h" line="73" />
+<source_reference file="user_interfaces.h" line="82" />
 </extent>
 <name>GuardInterface</name>
 <visible>true</visible>
 <concrete>false</concrete>
 <extent>
 <description>has by reference</description>
-<source_reference file="user_interfaces.h" line="7" />
+<source_reference file="user_interfaces.h" line="8" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="user_interfaces.h" line="10" />
+<source_reference file="user_interfaces.h" line="11" />
 </extent>
 <name>SupervisorInterface</name>
 <visible>true</visible>
 <concrete>false</concrete>
 <extent>
 <description>has by reference</description>
-<source_reference file="user_interfaces.h" line="40" />
+<source_reference file="user_interfaces.h" line="45" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="user_interfaces.h" line="43" />
+<source_reference file="user_interfaces.h" line="48" />
 </extent>
 </client_module>
 <supplier_module>
@@ -173,49 +280,57 @@
 <concrete>true</concrete>
 <extent>
 <description>has by value</description>
-<source_reference file="attendance_system.h" line="10" />
+<source_reference file="attendance_system.h" line="11" />
 </extent>
 <name>string</name>
 <visible>true</visible>
 <concrete>true</concrete>
 <extent>
 <description>has by value</description>
-<source_reference file="attendance_system.h" line="12" />
-</extent>
-<extent>
-<description>has by value</description>
 <source_reference file="attendance_system.h" line="13" />
 </extent>
 <extent>
-<description>pass by reference</description>
-<source_reference file="attendance_system.h" line="16" />
+<description>has by value</description>
+<source_reference file="attendance_system.h" line="14" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="attendance_system.h" line="16" />
+<source_reference file="attendance_system.h" line="17" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="attendance_system.h" line="57" />
+<source_reference file="attendance_system.h" line="17" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="attendance_system.h" line="57" />
+<source_reference file="attendance_system.h" line="63" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="attendance_system.h" line="57" />
+<source_reference file="attendance_system.h" line="63" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="attendance_system.h" line="83" />
+<source_reference file="attendance_system.h" line="63" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="attendance_system.h" line="175" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="attendance_system.h" line="241" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="attendance_system.h" line="257" />
 </extent>
 <name>unique_ptr</name>
 <visible>true</visible>
 <concrete>true</concrete>
 <extent>
 <description>has by value</description>
-<source_reference file="attendance_system.h" line="11" />
+<source_reference file="attendance_system.h" line="12" />
 </extent>
 </supplier_module>
 </module>

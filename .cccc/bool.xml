@@ -35,11 +35,7 @@
 <concrete>true</concrete>
 <extent>
 <description>has by value</description>
-<source_reference file="leave.h" line="11" />
-</extent>
-<extent>
-<description>pass by value</description>
-<source_reference file="leave.h" line="16" />
+<source_reference file="leave.h" line="13" />
 </extent>
 </client_module>
 <supplier_module>

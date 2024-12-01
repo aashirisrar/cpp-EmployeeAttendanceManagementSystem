@@ -1,29 +1,55 @@
+CCCC_Module@AdminInterface@class@
+CCCC_ModExt@AdminInterface@class@user_interfaces.h@167@definition@F???2@LOC:4 COM:0 MVG:0@2@d@
+CCCC_Module@ApprovedState@class@
+CCCC_ModExt@ApprovedState@class@leave.h@53@definition@T???0@LOC:3 COM:0 MVG:0@0@d@
+CCCC_Module@AttendanceReport@class@
+CCCC_ModExt@AttendanceReport@class@reports.h@6@definition@F???0@LOC:4 COM:0 MVG:0@0@d@
 CCCC_Module@AttendanceSystem@class@
-CCCC_ModExt@AttendanceSystem@class@attendance_system.h@8@definition@F???2@LOC:8 COM:0 MVG:0@2@d@
+CCCC_ModExt@AttendanceSystem@class@attendance_system.h@9@definition@F???2@LOC:7 COM:0 MVG:0@2@d@
+CCCC_Module@CasualLeave@class@
+CCCC_ModExt@CasualLeave@class@leave.h@102@definition@F???0@LOC:3 COM:0 MVG:0@0@d@
+CCCC_Module@EarnedLeave@class@
+CCCC_ModExt@EarnedLeave@class@leave.h@110@definition@F???0@LOC:3 COM:0 MVG:0@0@d@
 CCCC_Module@Employee@class@
-CCCC_ModExt@Employee@class@employee.h@8@definition@????0@LOC:13 COM:0 MVG:0@0@d@
+CCCC_ModExt@Employee@class@employee.h@8@definition@????0@LOC:15 COM:0 MVG:1@0@d@
 CCCC_Module@EmployeeInterface@class@
-CCCC_ModExt@EmployeeInterface@class@user_interfaces.h@68@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_ModExt@EmployeeInterface@class@user_interfaces.h@76@definition@F???2@LOC:6 COM:0 MVG:0@2@d@
 CCCC_Module@GuardInterface@class@
-CCCC_ModExt@GuardInterface@class@user_interfaces.h@5@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_ModExt@GuardInterface@class@user_interfaces.h@6@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
 CCCC_Module@ILeave@class@
-CCCC_ModExt@ILeave@class@interfaces.h@8@definition@F???2@LOC:11 COM:0 MVG:0@2@d@
-CCCC_Module@ILeaveApprovalStrategy@class@
-CCCC_ModExt@ILeaveApprovalStrategy@class@interfaces.h@26@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_ModExt@ILeave@class@interfaces.h@21@definition@F???2@LOC:15 COM:0 MVG:0@2@d@
 CCCC_Module@ILeaveFactory@class@
-CCCC_ModExt@ILeaveFactory@class@interfaces.h@20@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_ModExt@ILeaveFactory@class@interfaces.h@37@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_Module@ILeaveState@class@
+CCCC_ModExt@ILeaveState@class@interfaces.h@11@declaration@????2@LOC:1 COM:0 MVG:0@2@D@
+CCCC_ModExt@ILeaveState@class@interfaces.h@13@definition@F???2@LOC:7 COM:0 MVG:0@2@d@
 CCCC_Module@IObserver@class@
-CCCC_ModExt@IObserver@class@interfaces.h@32@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_ModExt@IObserver@class@interfaces.h@44@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
 CCCC_Module@IReportGenerator@class@
-CCCC_ModExt@IReportGenerator@class@interfaces.h@46@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_ModExt@IReportGenerator@class@interfaces.h@58@definition@F???2@LOC:4 COM:0 MVG:0@2@d@
 CCCC_Module@ISubject@class@
-CCCC_ModExt@ISubject@class@interfaces.h@38@definition@F???2@LOC:7 COM:0 MVG:0@2@d@
+CCCC_ModExt@ISubject@class@interfaces.h@50@definition@F???2@LOC:7 COM:0 MVG:0@2@d@
 CCCC_Module@Leave@class@
-CCCC_ModExt@Leave@class@leave.h@7@definition@F???0@LOC:9 COM:0 MVG:1@0@d@
+CCCC_ModExt@Leave@class@interfaces.h@10@declaration@????2@LOC:1 COM:1 MVG:0@2@D@
+CCCC_ModExt@Leave@class@leave.h@9@definition@????0@LOC:12 COM:1 MVG:0@0@d@
+CCCC_Module@LeaveFactory@class@
+CCCC_ModExt@LeaveFactory@class@leave.h@135@definition@F???0@LOC:9 COM:0 MVG:8@0@d@
 CCCC_Module@LeaveManagement@class@
 CCCC_ModExt@LeaveManagement@class@leave_management.h@7@definition@????0@LOC:11 COM:0 MVG:0@0@d@
+CCCC_Module@LeaveReport@class@
+CCCC_ModExt@LeaveReport@class@reports.h@24@definition@F???0@LOC:4 COM:0 MVG:0@0@d@
+CCCC_Module@OfficialLeave@class@
+CCCC_ModExt@OfficialLeave@class@leave.h@118@definition@F???0@LOC:3 COM:0 MVG:0@0@d@
+CCCC_Module@OutstandingLeaveReport@class@
+CCCC_ModExt@OutstandingLeaveReport@class@reports.h@43@definition@F???0@LOC:4 COM:0 MVG:0@0@d@
+CCCC_Module@PendingState@class@
+CCCC_ModExt@PendingState@class@leave.h@83@definition@T???0@LOC:3 COM:0 MVG:0@0@d@
+CCCC_Module@RejectedState@class@
+CCCC_ModExt@RejectedState@class@leave.h@68@definition@T???0@LOC:3 COM:0 MVG:0@0@d@
 CCCC_Module@SupervisorInterface@class@
-CCCC_ModExt@SupervisorInterface@class@user_interfaces.h@38@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_ModExt@SupervisorInterface@class@user_interfaces.h@43@definition@F???2@LOC:5 COM:0 MVG:0@2@d@
+CCCC_Module@UnpaidLeave@class@
+CCCC_ModExt@UnpaidLeave@class@leave.h@126@definition@F???0@LOC:3 COM:0 MVG:0@0@d@
 CCCC_Module@anonymous@@
 CCCC_Module@bool@@
 CCCC_Module@char@builtin@
@@ -40,78 +66,206 @@ CCCC_Module@string@@
 CCCC_Module@unique_ptr@@
 CCCC_Module@void@builtin@
 CCCC_ModExt@void@builtin@<nofile>@0@builtin definition@d?????@@0@d@
+CCCC_Member@AdminInterface@AdminInterface@@(AttendanceSystem &)@
+CCCC_MemExt@AdminInterface@AdminInterface@@(AttendanceSystem &)@user_interfaces.h@172@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
+CCCC_Member@AdminInterface@run@@()@
+CCCC_MemExt@AdminInterface@run@@()@user_interfaces.h@174@definition@F???0@LOC:28 COM:0 MVG:5@0@d@
+CCCC_Member@ApprovedState@approve@@(Leave &)@
+CCCC_MemExt@ApprovedState@approve@@(Leave &)@leave.h@55@definition@F???0@LOC:3 COM:0 MVG:0@0@d@
+CCCC_Member@ApprovedState@getStatus@@()@
+CCCC_MemExt@ApprovedState@getStatus@@()@leave.h@63@definition@T????@LOC:3 COM:0 MVG:1@?@d@
+CCCC_Member@ApprovedState@reject@@(Leave &)@
+CCCC_MemExt@ApprovedState@reject@@(Leave &)@leave.h@59@definition@F???0@LOC:3 COM:0 MVG:0@0@d@
+CCCC_Member@AttendanceReport@AttendanceReport@@(LeaveManagement &)@
+CCCC_MemExt@AttendanceReport@AttendanceReport@@(LeaveManagement &)@reports.h@9@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
+CCCC_Member@AttendanceReport@generateReport@@()@
+CCCC_MemExt@AttendanceReport@generateReport@@()@reports.h@11@definition@F???0@LOC:10 COM:0 MVG:2@0@d@
 CCCC_Member@AttendanceSystem@AttendanceSystem@@(const string &,const string &)@
-CCCC_MemExt@AttendanceSystem@AttendanceSystem@@(const string &,const string &)@attendance_system.h@16@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_MemExt@AttendanceSystem@AttendanceSystem@@(const string &,const string &)@attendance_system.h@17@definition@F????@LOC:5 COM:0 MVG:0@?@d@
+CCCC_Member@AttendanceSystem@addEmployee@@(int,const string &)@
+CCCC_MemExt@AttendanceSystem@addEmployee@@(int,const string &)@attendance_system.h@241@definition@F????@LOC:14 COM:0 MVG:3@?@d@
 CCCC_Member@AttendanceSystem@applyLeave@@(int,const string &,int,const string &,const string &)@
-CCCC_MemExt@AttendanceSystem@applyLeave@@(int,const string &,int,const string &,const string &)@attendance_system.h@57@definition@F????@LOC:6 COM:0 MVG:0@?@d@
+CCCC_MemExt@AttendanceSystem@applyLeave@@(int,const string &,int,const string &,const string &)@attendance_system.h@63@definition@F????@LOC:6 COM:0 MVG:0@?@d@
+CCCC_Member@AttendanceSystem@approveLeave@@()@
+CCCC_MemExt@AttendanceSystem@approveLeave@@()@attendance_system.h@99@definition@F????@LOC:55 COM:0 MVG:11@?@d@
+CCCC_Member@AttendanceSystem@checkLeaveBalance@@(int,const string &,int)@
+CCCC_MemExt@AttendanceSystem@checkLeaveBalance@@(int,const string &,int)@attendance_system.h@257@definition@F????@LOC:20 COM:0 MVG:8@?@d@
 CCCC_Member@AttendanceSystem@generateAttendanceReport@@()@
-CCCC_MemExt@AttendanceSystem@generateAttendanceReport@@()@attendance_system.h@64@definition@F????@LOC:7 COM:0 MVG:1@?@d@
+CCCC_MemExt@AttendanceSystem@generateAttendanceReport@@()@attendance_system.h@70@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@AttendanceSystem@generateAttendanceReportForEmployee@@(int)@
+CCCC_MemExt@AttendanceSystem@generateAttendanceReportForEmployee@@(int)@attendance_system.h@85@definition@F????@LOC:12 COM:0 MVG:1@?@d@
 CCCC_Member@AttendanceSystem@generateLeaveReport@@()@
-CCCC_MemExt@AttendanceSystem@generateLeaveReport@@()@attendance_system.h@72@definition@F????@LOC:9 COM:0 MVG:2@?@d@
+CCCC_MemExt@AttendanceSystem@generateLeaveReport@@()@attendance_system.h@75@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@AttendanceSystem@generateLeaveReportForEmployee@@(int)@
+CCCC_MemExt@AttendanceSystem@generateLeaveReportForEmployee@@(int)@attendance_system.h@158@definition@F????@LOC:15 COM:0 MVG:2@?@d@
+CCCC_Member@AttendanceSystem@generateOutStandingLeaveReport@@()@
+CCCC_MemExt@AttendanceSystem@generateOutStandingLeaveReport@@()@attendance_system.h@80@definition@F????@LOC:4 COM:0 MVG:0@?@d@
 CCCC_Member@AttendanceSystem@loadEmployeesFromFile@@()@
-CCCC_MemExt@AttendanceSystem@loadEmployeesFromFile@@()@attendance_system.h@25@definition@F????@LOC:21 COM:0 MVG:4@?@d@
+CCCC_MemExt@AttendanceSystem@loadEmployeesFromFile@@()@attendance_system.h@28@definition@F????@LOC:21 COM:0 MVG:4@?@d@
+CCCC_Member@AttendanceSystem@loadLeaves@@()@
+CCCC_MemExt@AttendanceSystem@loadLeaves@@()@attendance_system.h@197@definition@F????@LOC:29 COM:0 MVG:4@?@d@
 CCCC_Member@AttendanceSystem@markAttendance@@(int,int)@
-CCCC_MemExt@AttendanceSystem@markAttendance@@(int,int)@attendance_system.h@49@definition@F????@LOC:7 COM:0 MVG:1@?@d@
+CCCC_MemExt@AttendanceSystem@markAttendance@@(int,int)@attendance_system.h@52@definition@F????@LOC:9 COM:0 MVG:3@?@d@
 CCCC_Member@AttendanceSystem@saveEmployeeDataToFile@@(const string &)@
-CCCC_MemExt@AttendanceSystem@saveEmployeeDataToFile@@(const string &)@attendance_system.h@83@definition@F????@LOC:31 COM:4 MVG:6@?@d@
+CCCC_MemExt@AttendanceSystem@saveEmployeeDataToFile@@(const string &)@attendance_system.h@175@definition@F????@LOC:16 COM:1 MVG:3@?@d@
+CCCC_Member@AttendanceSystem@saveLeaves@@()@
+CCCC_MemExt@AttendanceSystem@saveLeaves@@()@attendance_system.h@227@definition@F????@LOC:13 COM:0 MVG:2@?@d@
 CCCC_Member@AttendanceSystem@~AttendanceSystem@@()@
-CCCC_MemExt@AttendanceSystem@~AttendanceSystem@@()@attendance_system.h@21@definition@F????@LOC:3 COM:0 MVG:0@?@d@
+CCCC_MemExt@AttendanceSystem@~AttendanceSystem@@()@attendance_system.h@23@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_Member@CasualLeave@CasualLeave@@(int)@
+CCCC_MemExt@CasualLeave@CasualLeave@@(int)@leave.h@104@definition@F???0@LOC:4 COM:0 MVG:0@0@d@
+CCCC_Member@EarnedLeave@EarnedLeave@@(int)@
+CCCC_MemExt@EarnedLeave@EarnedLeave@@(int)@leave.h@112@definition@F???0@LOC:4 COM:0 MVG:0@0@d@
 CCCC_Member@EmployeeInterface@EmployeeInterface@@(AttendanceSystem &)@
-CCCC_MemExt@EmployeeInterface@EmployeeInterface@@(AttendanceSystem &)@user_interfaces.h@73@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
+CCCC_MemExt@EmployeeInterface@EmployeeInterface@@(AttendanceSystem &)@user_interfaces.h@82@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
 CCCC_Member@EmployeeInterface@run@@()@
-CCCC_MemExt@EmployeeInterface@run@@()@user_interfaces.h@75@definition@F???0@LOC:30 COM:0 MVG:4@0@d@
+CCCC_MemExt@EmployeeInterface@run@@()@user_interfaces.h@84@definition@F???0@LOC:71 COM:2 MVG:12@0@d@
 CCCC_Member@GuardInterface@GuardInterface@@(AttendanceSystem &)@
-CCCC_MemExt@GuardInterface@GuardInterface@@(AttendanceSystem &)@user_interfaces.h@10@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
+CCCC_MemExt@GuardInterface@GuardInterface@@(AttendanceSystem &)@user_interfaces.h@11@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
 CCCC_Member@GuardInterface@run@@()@
-CCCC_MemExt@GuardInterface@run@@()@user_interfaces.h@12@definition@F???0@LOC:23 COM:0 MVG:4@0@d@
-CCCC_Member@Leave@Leave@@(const string &,int,bool)@
-CCCC_MemExt@Leave@Leave@@(const string &,int,bool)@leave.h@16@definition@F????@LOC:2 COM:0 MVG:0@?@d@
+CCCC_MemExt@GuardInterface@run@@()@user_interfaces.h@13@definition@F???0@LOC:27 COM:0 MVG:5@0@d@
+CCCC_Member@LeaveReport@LeaveReport@@(LeaveManagement &)@
+CCCC_MemExt@LeaveReport@LeaveReport@@(LeaveManagement &)@reports.h@27@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
+CCCC_Member@LeaveReport@generateReport@@()@
+CCCC_MemExt@LeaveReport@generateReport@@()@reports.h@29@definition@F???0@LOC:12 COM:0 MVG:3@0@d@
+CCCC_Member@OfficialLeave@OfficialLeave@@(int)@
+CCCC_MemExt@OfficialLeave@OfficialLeave@@(int)@leave.h@120@definition@F???0@LOC:4 COM:0 MVG:0@0@d@
+CCCC_Member@OutstandingLeaveReport@OutstandingLeaveReport@@(LeaveManagement &)@
+CCCC_MemExt@OutstandingLeaveReport@OutstandingLeaveReport@@(LeaveManagement &)@reports.h@46@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
+CCCC_Member@OutstandingLeaveReport@generateReport@@()@
+CCCC_MemExt@OutstandingLeaveReport@generateReport@@()@reports.h@48@definition@F???0@LOC:7 COM:0 MVG:1@0@d@
+CCCC_Member@PendingState@approve@@(Leave &)@
+CCCC_MemExt@PendingState@approve@@(Leave &)@leave.h@85@definition@F???0@LOC:5 COM:0 MVG:0@0@d@
+CCCC_Member@PendingState@getStatus@@()@
+CCCC_MemExt@PendingState@getStatus@@()@leave.h@97@definition@T????@LOC:3 COM:0 MVG:1@?@d@
+CCCC_Member@PendingState@reject@@(Leave &)@
+CCCC_MemExt@PendingState@reject@@(Leave &)@leave.h@91@definition@F???0@LOC:5 COM:0 MVG:0@0@d@
+CCCC_Member@RejectedState@approve@@(Leave &)@
+CCCC_MemExt@RejectedState@approve@@(Leave &)@leave.h@70@definition@F???0@LOC:3 COM:0 MVG:0@0@d@
+CCCC_Member@RejectedState@getStatus@@()@
+CCCC_MemExt@RejectedState@getStatus@@()@leave.h@78@definition@T????@LOC:3 COM:0 MVG:1@?@d@
+CCCC_Member@RejectedState@reject@@(Leave &)@
+CCCC_MemExt@RejectedState@reject@@(Leave &)@leave.h@74@definition@F???0@LOC:3 COM:0 MVG:0@0@d@
 CCCC_Member@SupervisorInterface@SupervisorInterface@@(AttendanceSystem &)@
-CCCC_MemExt@SupervisorInterface@SupervisorInterface@@(AttendanceSystem &)@user_interfaces.h@43@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
+CCCC_MemExt@SupervisorInterface@SupervisorInterface@@(AttendanceSystem &)@user_interfaces.h@48@definition@F???0@LOC:1 COM:0 MVG:0@0@d@
 CCCC_Member@SupervisorInterface@run@@()@
-CCCC_MemExt@SupervisorInterface@run@@()@user_interfaces.h@45@definition@F???0@LOC:20 COM:0 MVG:5@0@d@
+CCCC_MemExt@SupervisorInterface@run@@()@user_interfaces.h@50@definition@F???0@LOC:23 COM:0 MVG:6@0@d@
+CCCC_Member@UnpaidLeave@UnpaidLeave@@(int)@
+CCCC_MemExt@UnpaidLeave@UnpaidLeave@@(int)@leave.h@128@definition@F???0@LOC:4 COM:0 MVG:0@0@d@
+CCCC_Member@anonymous@approve@@()@
+CCCC_MemExt@anonymous@approve@@()@leave.h@36@definition@F????@LOC:5 COM:0 MVG:1@?@d@
+CCCC_Member@anonymous@getDuration@@()@
+CCCC_MemExt@anonymous@getDuration@@()@leave.h@24@declaration@T???0@LOC:0 COM:0 MVG:0@0@D@
+CCCC_Member@anonymous@getEndDate@@()@
+CCCC_MemExt@anonymous@getEndDate@@()@leave.h@30@declaration@T????@LOC:0 COM:0 MVG:0@?@D@
+CCCC_Member@anonymous@getStartDate@@()@
+CCCC_MemExt@anonymous@getStartDate@@()@leave.h@29@declaration@T????@LOC:0 COM:0 MVG:0@?@D@
+CCCC_Member@anonymous@getStatus@@()@
+CCCC_MemExt@anonymous@getStatus@@()@leave.h@48@declaration@T????@LOC:0 COM:0 MVG:0@?@D@
+CCCC_Member@anonymous@getType@@()@
+CCCC_MemExt@anonymous@getType@@()@leave.h@23@declaration@T???0@LOC:0 COM:0 MVG:0@0@D@
 CCCC_Member@anonymous@main@@()@
-CCCC_MemExt@anonymous@main@@()@main.cpp@4@definition@F????@LOC:32 COM:1 MVG:7@?@d@
+CCCC_MemExt@anonymous@main@@()@main.cpp@4@definition@F????@LOC:37 COM:0 MVG:8@?@d@
+CCCC_Member@anonymous@reject@@()@
+CCCC_MemExt@anonymous@reject@@()@leave.h@42@definition@F????@LOC:5 COM:0 MVG:1@?@d@
+CCCC_Member@anonymous@requiresApproval@@()@
+CCCC_MemExt@anonymous@requiresApproval@@()@leave.h@25@declaration@T???0@LOC:0 COM:0 MVG:0@0@D@
+CCCC_Member@anonymous@setEndDate@@(const string &)@
+CCCC_MemExt@anonymous@setEndDate@@(const string &)@leave.h@28@definition@F????@LOC:1 COM:0 MVG:0@?@d@
+CCCC_Member@anonymous@setStartDate@@(const string &)@
+CCCC_MemExt@anonymous@setStartDate@@(const string &)@leave.h@27@definition@F????@LOC:1 COM:0 MVG:0@?@d@
+CCCC_Member@anonymous@setState@@(unique_ptr)@
+CCCC_MemExt@anonymous@setState@@(unique_ptr)@leave.h@32@definition@F????@LOC:3 COM:0 MVG:0@?@d@
+CCCC_UseRel@AttendanceSystem@AdminInterface@
+CCCC_UseExt@AttendanceSystem@AdminInterface@user_interfaces.h@169@has by reference@F???2@LOC:0 COM:0 MVG:0@2@h@
+CCCC_UseExt@AttendanceSystem@AdminInterface@user_interfaces.h@172@pass by reference@F???0@*@0@p@
+CCCC_UseRel@ILeaveState@ApprovedState@
+CCCC_UseExt@ILeaveState@ApprovedState@leave.h@53@inheritance@T???0@*@0@I@
+CCCC_UseRel@Leave@ApprovedState@
+CCCC_UseExt@Leave@ApprovedState@leave.h@55@pass by reference@F???0@*@0@p@
+CCCC_UseExt@Leave@ApprovedState@leave.h@59@pass by reference@F???0@*@0@p@
+CCCC_UseRel@IReportGenerator@AttendanceReport@
+CCCC_UseExt@IReportGenerator@AttendanceReport@reports.h@6@inheritance@????0@*@0@I@
+CCCC_UseRel@LeaveManagement@AttendanceReport@
+CCCC_UseExt@LeaveManagement@AttendanceReport@reports.h@7@has by reference@????0@LOC:0 COM:0 MVG:0@0@h@
+CCCC_UseExt@LeaveManagement@AttendanceReport@reports.h@9@pass by reference@F???0@*@0@p@
 CCCC_UseRel@LeaveManagement@AttendanceSystem@
-CCCC_UseExt@LeaveManagement@AttendanceSystem@attendance_system.h@10@has by value@????2@LOC:0 COM:0 MVG:0@2@H@
+CCCC_UseExt@LeaveManagement@AttendanceSystem@attendance_system.h@11@has by value@????2@LOC:0 COM:0 MVG:0@2@H@
 CCCC_UseRel@string@AttendanceSystem@
-CCCC_UseExt@string@AttendanceSystem@attendance_system.h@12@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
 CCCC_UseExt@string@AttendanceSystem@attendance_system.h@13@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
-CCCC_UseExt@string@AttendanceSystem@attendance_system.h@16@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@AttendanceSystem@attendance_system.h@16@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@AttendanceSystem@attendance_system.h@57@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@AttendanceSystem@attendance_system.h@57@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@AttendanceSystem@attendance_system.h@57@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@AttendanceSystem@attendance_system.h@83@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@14@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@17@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@17@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@63@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@63@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@63@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@175@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@241@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@AttendanceSystem@attendance_system.h@257@pass by reference@F????@*@?@p@
 CCCC_UseRel@unique_ptr@AttendanceSystem@
-CCCC_UseExt@unique_ptr@AttendanceSystem@attendance_system.h@11@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseExt@unique_ptr@AttendanceSystem@attendance_system.h@12@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseRel@Leave@CasualLeave@
+CCCC_UseExt@Leave@CasualLeave@leave.h@102@inheritance@T???0@*@0@I@
+CCCC_UseRel@Leave@EarnedLeave@
+CCCC_UseExt@Leave@EarnedLeave@leave.h@110@inheritance@F???0@*@0@I@
 CCCC_UseRel@IObserver@Employee@
 CCCC_UseExt@IObserver@Employee@employee.h@8@inheritance@????0@*@0@I@
 CCCC_UseRel@string@Employee@
 CCCC_UseExt@string@Employee@employee.h@11@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
 CCCC_UseRel@AttendanceSystem@EmployeeInterface@
-CCCC_UseExt@AttendanceSystem@EmployeeInterface@user_interfaces.h@70@has by reference@F???2@LOC:0 COM:0 MVG:0@2@h@
-CCCC_UseExt@AttendanceSystem@EmployeeInterface@user_interfaces.h@73@pass by reference@F???0@*@0@p@
+CCCC_UseExt@AttendanceSystem@EmployeeInterface@user_interfaces.h@79@has by reference@F???2@LOC:0 COM:0 MVG:0@2@h@
+CCCC_UseExt@AttendanceSystem@EmployeeInterface@user_interfaces.h@82@pass by reference@F???0@*@0@p@
 CCCC_UseRel@AttendanceSystem@GuardInterface@
-CCCC_UseExt@AttendanceSystem@GuardInterface@user_interfaces.h@7@has by reference@????2@LOC:0 COM:0 MVG:0@2@h@
-CCCC_UseExt@AttendanceSystem@GuardInterface@user_interfaces.h@10@pass by reference@F???0@*@0@p@
+CCCC_UseExt@AttendanceSystem@GuardInterface@user_interfaces.h@8@has by reference@????2@LOC:0 COM:0 MVG:0@2@h@
+CCCC_UseExt@AttendanceSystem@GuardInterface@user_interfaces.h@11@pass by reference@F???0@*@0@p@
 CCCC_UseRel@ILeave@Leave@
-CCCC_UseExt@ILeave@Leave@leave.h@7@inheritance@????0@*@0@I@
+CCCC_UseExt@ILeave@Leave@leave.h@9@inheritance@????0@*@0@I@
 CCCC_UseRel@bool@Leave@
-CCCC_UseExt@bool@Leave@leave.h@11@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
-CCCC_UseExt@bool@Leave@leave.h@16@pass by value@F????@*@?@P@
+CCCC_UseExt@bool@Leave@leave.h@13@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
 CCCC_UseRel@string@Leave@
-CCCC_UseExt@string@Leave@leave.h@9@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
-CCCC_UseExt@string@Leave@leave.h@12@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
-CCCC_UseExt@string@Leave@leave.h@13@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
-CCCC_UseExt@string@Leave@leave.h@16@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@Leave@leave.h@11@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseRel@unique_ptr@Leave@
+CCCC_UseExt@unique_ptr@Leave@leave.h@14@has by value@?????@LOC:0 COM:0 MVG:0@?@H@
+CCCC_UseRel@ILeaveFactory@LeaveFactory@
+CCCC_UseExt@ILeaveFactory@LeaveFactory@leave.h@135@inheritance@F???0@*@0@I@
 CCCC_UseRel@ISubject@LeaveManagement@
 CCCC_UseExt@ISubject@LeaveManagement@leave_management.h@7@inheritance@????0@*@0@I@
+CCCC_UseRel@IReportGenerator@LeaveReport@
+CCCC_UseExt@IReportGenerator@LeaveReport@reports.h@24@inheritance@F???0@*@0@I@
+CCCC_UseRel@LeaveManagement@LeaveReport@
+CCCC_UseExt@LeaveManagement@LeaveReport@reports.h@25@has by reference@F???0@LOC:0 COM:0 MVG:0@0@h@
+CCCC_UseExt@LeaveManagement@LeaveReport@reports.h@27@pass by reference@F???0@*@0@p@
+CCCC_UseRel@Leave@OfficialLeave@
+CCCC_UseExt@Leave@OfficialLeave@leave.h@118@inheritance@F???0@*@0@I@
+CCCC_UseRel@IReportGenerator@OutstandingLeaveReport@
+CCCC_UseExt@IReportGenerator@OutstandingLeaveReport@reports.h@43@inheritance@F???0@*@0@I@
+CCCC_UseRel@LeaveManagement@OutstandingLeaveReport@
+CCCC_UseExt@LeaveManagement@OutstandingLeaveReport@reports.h@44@has by reference@F???0@LOC:0 COM:0 MVG:0@0@h@
+CCCC_UseExt@LeaveManagement@OutstandingLeaveReport@reports.h@46@pass by reference@F???0@*@0@p@
+CCCC_UseRel@ILeaveState@PendingState@
+CCCC_UseExt@ILeaveState@PendingState@leave.h@83@inheritance@T???0@*@0@I@
+CCCC_UseRel@Leave@PendingState@
+CCCC_UseExt@Leave@PendingState@leave.h@85@pass by reference@F???0@*@0@p@
+CCCC_UseExt@Leave@PendingState@leave.h@91@pass by reference@F???0@*@0@p@
+CCCC_UseRel@ILeaveState@RejectedState@
+CCCC_UseExt@ILeaveState@RejectedState@leave.h@68@inheritance@T???0@*@0@I@
+CCCC_UseRel@Leave@RejectedState@
+CCCC_UseExt@Leave@RejectedState@leave.h@70@pass by reference@F???0@*@0@p@
+CCCC_UseExt@Leave@RejectedState@leave.h@74@pass by reference@F???0@*@0@p@
 CCCC_UseRel@AttendanceSystem@SupervisorInterface@
-CCCC_UseExt@AttendanceSystem@SupervisorInterface@user_interfaces.h@40@has by reference@F???2@LOC:0 COM:0 MVG:0@2@h@
-CCCC_UseExt@AttendanceSystem@SupervisorInterface@user_interfaces.h@43@pass by reference@F???0@*@0@p@
+CCCC_UseExt@AttendanceSystem@SupervisorInterface@user_interfaces.h@45@has by reference@F???2@LOC:0 COM:0 MVG:0@2@h@
+CCCC_UseExt@AttendanceSystem@SupervisorInterface@user_interfaces.h@48@pass by reference@F???0@*@0@p@
+CCCC_UseRel@Leave@UnpaidLeave@
+CCCC_UseExt@Leave@UnpaidLeave@leave.h@126@inheritance@F???0@*@0@I@
 CCCC_RejExt@main.cpp@1@<file scope items>@F????@LOC:0 COM:0 MVG:0@?@r@
 CCCC_RejExt@attendance_system.h@1@<file scope items>@F???2@LOC:1 COM:0 MVG:0@2@r@
 CCCC_RejExt@interfaces.h@1@<file scope items>@F???2@LOC:1 COM:0 MVG:0@2@r@
-CCCC_RejExt@leave_management.h@20@employees [ id @????0@LOC:1 COM:0 MVG:0@0@r@
+CCCC_RejExt@leave.h@23@override { return @T???0@LOC:1 COM:0 MVG:1@0@r@
+CCCC_RejExt@leave.h@24@override { return @T???0@LOC:1 COM:0 MVG:1@0@r@
+CCCC_RejExt@leave.h@25@override { return @T???0@LOC:1 COM:0 MVG:1@0@r@
+CCCC_RejExt@leave.h@29@override { return @T????@LOC:1 COM:0 MVG:1@?@r@
+CCCC_RejExt@leave.h@30@override { return @T????@LOC:1 COM:0 MVG:1@?@r@
+CCCC_RejExt@leave.h@48@override { return @T????@LOC:3 COM:0 MVG:2@?@r@
+CCCC_RejExt@leave.h@1@<file scope items>@F???0@LOC:2 COM:0 MVG:0@0@r@
+CCCC_RejExt@reports.h@1@<file scope items>@F???0@LOC:1 COM:0 MVG:0@0@r@
 CCCC_RejExt@user_interfaces.h@1@<file scope items>@F???2@LOC:1 COM:0 MVG:0@2@r@

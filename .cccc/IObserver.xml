@@ -24,7 +24,7 @@
 </module_summary>
 <module_detail>
 <description>definition</description>
-<source_reference file="interfaces.h" line="32" />
+<source_reference file="interfaces.h" line="44" />
 <lines_of_code value="5" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
 <lines_of_comment value="0" level="0" />

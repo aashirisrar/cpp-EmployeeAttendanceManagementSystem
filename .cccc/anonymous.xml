@@ -2,16 +2,16 @@
 <!--Detailed report on module anonymous-->
 <CCCC_Project>
 <module_summary>
-<lines_of_code value="32" level="0" />
+<lines_of_code value="52" level="0" />
 <lines_of_code_per_member_function value="******" level="0" />
-<McCabes_cyclomatic_complexity value="7" level="0" />
+<McCabes_cyclomatic_complexity value="10" level="0" />
 <McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
-<lines_of_code value="1" level="0" />
-<lines_of_code_per_member_function value="********" level="2" />
-<lines_of_code_per_line_of_comment value="32.000" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="7.000" level="1" />
-<weighted_methods_per_class_unity value="1" level="0" />
-<weighted_methods_per_class_visibility value="0" level="0" />
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="********" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<weighted_methods_per_class_unity value="12" level="0" />
+<weighted_methods_per_class_visibility value="3" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
 <number_of_children value="0" level="0" />
 <coupling_between_objects value="0" level="0" />
@@ -26,16 +26,148 @@
 </module_detail>
 <procedural_detail>
 <member_function>
+<name>approve()</name>
+<extent>
+<description>definition</description>
+<source_reference file="leave.h" line="36" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getDuration()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="leave.h" line="24" />
+</extent>
+<lines_of_code value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getEndDate()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="leave.h" line="30" />
+</extent>
+<lines_of_code value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getStartDate()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="leave.h" line="29" />
+</extent>
+<lines_of_code value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getStatus()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="leave.h" line="48" />
+</extent>
+<lines_of_code value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getType()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="leave.h" line="23" />
+</extent>
+<lines_of_code value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
 <name>main()</name>
 <extent>
 <description>definition</description>
 <source_reference file="main.cpp" line="4" />
 </extent>
-<lines_of_code value="32" level="1" />
-<McCabes_cyclomatic_complexity value="7" level="0" />
-<lines_of_comment value="1" level="0" />
-<lines_of_code_per_line_of_comment value="32.000" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="7.000" level="1" />
+<lines_of_code value="37" level="1" />
+<McCabes_cyclomatic_complexity value="8" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+</member_function>
+<member_function>
+<name>reject()</name>
+<extent>
+<description>definition</description>
+<source_reference file="leave.h" line="42" />
+</extent>
+<lines_of_code value="5" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>requiresApproval()</name>
+<extent>
+<description>declaration</description>
+<source_reference file="leave.h" line="25" />
+</extent>
+<lines_of_code value="0" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setEndDate(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="leave.h" line="28" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setStartDate(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="leave.h" line="27" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setState(unique_ptr)</name>
+<extent>
+<description>definition</description>
+<source_reference file="leave.h" line="32" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
 </member_function>
 </procedural_detail>
 <structural_detail>
